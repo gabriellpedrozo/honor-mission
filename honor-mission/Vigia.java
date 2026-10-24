@@ -16,4 +16,11 @@ public class Vigia extends Actor
     {
         // Add your action code here.
     }
+    
+    /**
+     * Vigia se movimenta pela rota de patrulha
+     */
+    private void patrulhar() {
+        // desenvolver
+    }
 }

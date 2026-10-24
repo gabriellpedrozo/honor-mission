@@ -14,6 +14,27 @@ public class Jogador extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        movimentar();
+    }
+    /**
+     * Faz o jogador se movimentar pelo mapa
+     */
+    private void movimentar() {
+        if (Greenfoot.isKeyDown("left")) {
+            setRotation(0);
+            move(-4);
+        }
+        if (Greenfoot.isKeyDown("right")) {
+            setRotation(0);
+            move(4);
+        }
+        if (Greenfoot.isKeyDown("up")) {
+            setRotation(270);
+            move(4);
+        }
+        if (Greenfoot.isKeyDown("down")) {
+            setRotation(90);
+            move(4);
+        }
     }
 }
