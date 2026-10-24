@@ -35,7 +35,7 @@ public class Patio extends World
         Rato rato2 = new Rato();
         addObject(rato2,452,307);
         Rato rato3 = new Rato();
-        addObject(rato3,491,254);
+        addObject(rato3,451,254);
         Rato rato4 = new Rato();
         addObject(rato4,375,313);
         Palet palet = new Palet();
