@@ -5,13 +5,13 @@ import greenfoot.*;
  * @author (Gabriel Pedrozo) 
  * @version (24/10/2026)
  */
-public class Casa_Vigia  extends World
+public class CasaVigia  extends World
 {
 
     /**
      * Constructor for objects of class Casa_Vigia
      */
-    public Casa_Vigia()
+    public CasaVigia()
     {
         super(1588, 622, 1);
         prepare();
