@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Rato here.
+ * Representa os roedores que habitam o quartel do TG.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Mateus Cunha) 
+ * @version (22/10/2026)
  */
 public class Rato extends Actor
 {

@@ -2,10 +2,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.List;
 
 /**
- * Write a description of class Patio here.
+ * Patio do Tiro de Guerra: onde o jogo inicia.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Mateus Cunha) 
+ * @version (22/10/2026)
  */
 public class Patio extends World
 {
@@ -48,5 +48,10 @@ public class Patio extends World
         addObject(rato3,451,254);
         Rato rato4 = new Rato();
         addObject(rato4,375,313);
+        
+        // configuracoes da passagem
+        CasaVigia casaVigia = new CasaVigia(this);
+        Passagem passagem = new Passagem(50, 65, casaVigia, 608, 365);
+        addObject(passagem,704,160);
     }
 }

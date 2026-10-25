@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Rato
-comment0.text=\n\ Write\ a\ description\ of\ class\ Rato\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Representa\ os\ roedores\ que\ habitam\ o\ quartel\ do\ TG.\n\ \n\ @author\ (Mateus\ Cunha)\ \n\ @version\ (22/10/2026)\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ Rato\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
