@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.List;
 
 /**
  * Write a description of class Patio here.
@@ -8,7 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Patio extends World
 {
-
     /**
      * Constructor for objects of class Patio.
      * 
@@ -18,6 +18,16 @@ public class Patio extends World
         // Create a new world with 800x600 cells with a cell size of 1x1 pixels.
         super(1000, 750, 1); 
         prepare();
+    }
+    
+    /**
+     * Retorna o unico jogador que esta no mundo.
+     * Se nao encontrar, retorna null.
+     */
+    public Jogador obterJogador() {
+        List<Jogador> listaJogadores = this.getObjects(Jogador.class);
+        
+        return listaJogadores.get(0);
     }
     
     /**
@@ -35,7 +45,7 @@ public class Patio extends World
         Rato rato2 = new Rato();
         addObject(rato2,452,307);
         Rato rato3 = new Rato();
-        addObject(rato3,491,254);
+        addObject(rato3,451,254);
         Rato rato4 = new Rato();
         addObject(rato4,375,313);
     }

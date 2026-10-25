@@ -14,6 +14,17 @@ public class Rato extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        perseguir();
+    }
+    
+    /**
+     * Faz o rato se voltar para a direcao do jogador e comecar a persegui-lo
+     */
+    private void perseguir() {
+        Patio patio = getWorldOfType(Patio.class);
+        Jogador jogador = patio.obterJogador();
+        
+        turnTowards(jogador.getX(), jogador.getY());
+        move(2);
     }
 }
