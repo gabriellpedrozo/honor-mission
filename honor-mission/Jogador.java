@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Jogador extends Actor
 {
+
     /**
      * Act - do whatever the Jogador wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -16,25 +17,44 @@ public class Jogador extends Actor
     {
         movimentar();
     }
+
     /**
      * Faz o jogador se movimentar pelo mapa
      */
     private void movimentar() {
-        if (Greenfoot.isKeyDown("left")) {
+        if (Greenfoot.isKeyDown("left"))
+        {
             setRotation(0);
-            move(-4);
+            moverComColisao(-4, 0);
         }
-        if (Greenfoot.isKeyDown("right")) {
+
+        if (Greenfoot.isKeyDown("right"))
+        {
             setRotation(0);
-            move(4);
+            moverComColisao(4, 0);
         }
-        if (Greenfoot.isKeyDown("up")) {
+
+        if (Greenfoot.isKeyDown("up"))
+        {
             setRotation(270);
-            move(4);
+            moverComColisao(0, -4);
         }
-        if (Greenfoot.isKeyDown("down")) {
+
+        if (Greenfoot.isKeyDown("down"))
+        {
             setRotation(90);
-            move(4);
+            moverComColisao(0, 4);
+        }
+    }
+
+     private void moverComColisao(int dx, int dy)
+    {
+        setLocation(getX() + dx, getY() + dy);
+
+        if (isTouching(Obstaculo.class))
+        {
+            setLocation(getX() - dx, getY() - dy);
         }
     }
 }
+
