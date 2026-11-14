@@ -37,5 +37,14 @@ public class Quartel extends World
         addObject(new Cachorro(), 336, 274);
         addObject(new Cachorro(), 443, 400);
         addObject(new Cachorro(), 727, 526);
+        
+        // Adicionando passagens
+        Museu museu = new Museu();
+        
+        Passagem passagemMuseu = new Passagem(35, 60, museu, 100, 300);
+        addObject(passagemMuseu, 80, 367);
+        
+        PassagemFase3 passagemSalaInstrucao = new PassagemFase3(100, 58, museu, 100, 300);
+        addObject(passagemSalaInstrucao, 400, 81);
     }
 }

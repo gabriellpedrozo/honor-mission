@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Museu
+comment0.text=\n\ Museu\ de\ reliquias\ do\ quartel.\ Cuidado\ com\ o\ alarme\n\ \n\ @author\ Mateus\ Cunha\ &&\ Gabriel\ Pedrozo\n\ @version\ 14/11/2026\n
+comment1.params=
+comment1.target=Museu()
+comment1.text=\n\ Construtor\ para\ o\ Museu.\n\ \n
+comment2.params=
+comment2.target=void\ prepare()
+comment2.text=\n\ Prepara\ o\ mundo\ para\ o\ in\u00EDcio\ do\ programa.\n\ Ou\ seja\:\ criar\ os\ objetos\ iniciais\ e\ adicion\u00E1-los\ ao\ mundo.\n
+numComments=3

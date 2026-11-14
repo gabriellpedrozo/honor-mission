@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Passagem para a segunda fase.
  * 
- * @author (Mateus Cunha) 
- * @version (11/02/2026)
+ * @author Mateus Cunha
+ * @version 02/11/2026
  */
 public class PassagemFase2 extends Passagem
 {

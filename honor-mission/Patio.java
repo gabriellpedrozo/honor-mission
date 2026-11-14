@@ -99,7 +99,7 @@ public class Patio extends World
 
         // passagem para a fase 2 (so libera quando nao houver ratos)
         Quartel quartel = new Quartel();
-        PassagemFase2 passagemFase2 = new PassagemFase2(35, 10, quartel, 225, 200);
+        PassagemFase2 passagemFase2 = new PassagemFase2(35, 10, quartel, 250, 580);
         addObject(passagemFase2, 240, 203);        
     }
 }
