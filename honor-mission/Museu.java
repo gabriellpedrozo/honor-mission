@@ -1,31 +1,87 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+import greenfoot.*;
+import java.util.List;
 
 /**
- * Museu de reliquias do quartel. Cuidado com o alarme
- * 
+ * Representa o museu de relíquias do quartel, onde o jogador
+ * precisa encontrar uma maneira de desativar os lasers.
+ *
  * @author Mateus Cunha && Gabriel Pedrozo
- * @version 14/11/2026
+ * @version 15/11/2026
  */
 public class Museu extends World
 {
+    private static boolean lasersAtivos = true;
+    private boolean estadoAtualizado = false;
+
     /**
-     * Construtor para o Museu.
-     * 
+     * Cria o mundo Museu e prepara o cenário.
      */
     public Museu()
-    {    
-        // Create a new world with 1000x750 cells with a cell size of 1x1 pixels.
-        super(1000, 750, 1); 
+    {
+        super(1000, 750, 1);
+
+        if (lasersAtivos)
+        {
+            setBackground("museu_laser.png");
+        }
+        else
+        {
+            setBackground("museu.png");
+        }
+
         prepare();
     }
-    
-     /**
-     * Prepara o mundo para o início do programa.
-     * Ou seja: criar os objetos iniciais e adicioná-los ao mundo.
+
+    /**
+     * Desativa os lasers do Museu.
+     */
+    public static void desativarLasers()
+    {
+        lasersAtivos = false;
+    }
+
+    /**
+     * Reinicia os lasers para uma nova partida.
+     */
+    public static void reiniciarLasers()
+    {
+        lasersAtivos = true;
+    }
+
+    /**
+     * Verifica se o estado dos lasers mudou.
+     * Atualiza o cenário e remove os lasers quando necessário.
+     */
+    public void act()
+    {
+        if (!lasersAtivos && !estadoAtualizado)
+        {
+            setBackground("museu.png");
+            List<Lasers> lasers = getObjects(Lasers.class);
+
+            for (Lasers laser : lasers)
+            {
+                removeObject(laser);
+            }
+
+            estadoAtualizado = true;
+        }
+    }
+
+    /**
+     * Prepara o mundo, adicionando o jogador e os lasers.
      */
     private void prepare()
     {
         Jogador jogador = new Jogador();
-        addObject(jogador,883,523);
+        addObject(jogador, 883, 523);
+
+        if (lasersAtivos)
+        {
+            Lasers lasers = new Lasers(60, 70);
+            addObject(lasers, 877, 272);
+        }
     }
 }
+

@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=Tiro
-comment0.text=\n\ Classe\ que\ representa\ o\ disparo\ da\ arma\ de\ fogo.\n\ \n\ @author\ (Mateus\ Cunha)\ \n\ @version\ (06/11/2026)\n
+comment0.text=\r\n\ Classe\ que\ representa\ o\ disparo\ da\ arma\ de\ fogo.\r\n\ \r\n\ @author\ (Mateus\ Cunha)\ \r\n\ @version\ (06/11/2026)\r\n
 comment1.params=anguloGraus
 comment1.target=Tiro(int)
-comment1.text=\n\ @param\ anguloGraus\ direcao\ do\ tiro\ (0\ \=\ direita,\ 90\ \=\ baixo)\n
+comment1.text=\r\n\ @param\ anguloGraus\ direcao\ do\ tiro\ (0\ \=\ direita,\ 90\ \=\ baixo)\r\n
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\n\ Act\ -\ O\ tiro\ se\ move\ na\ direcao\ do\ angulo\ inicial\ calculado\ de\ acordo\n\ com\ o\ jogador.\ Se\ acerta\ o\ jogador,\ da\ dano.\ Caso\ encoste\ na\ parede\n\ (obstaculo\ ou\ limites\ do\ mapa)\ o\ tiro\ some.\n
+comment2.text=\r\n\ Act\ -\ O\ tiro\ se\ move\ na\ direcao\ do\ angulo\ inicial\ calculado\ de\ acordo\r\n\ com\ o\ jogador.\ Se\ acerta\ o\ jogador,\ da\ dano.\ Caso\ encoste\ na\ parede\r\n\ (obstaculo\ ou\ limites\ do\ mapa)\ o\ tiro\ some.\r\n
 numComments=3
