@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Vilao
+comment0.text=\r\n\ Classe\ base\ de\ todos\ os\ inimigos\ do\ jogo.\ Re\u00FAne\ os\ comportamentos\ comuns\:\r\n\ perceber\ o\ jogador,\ perseguir,\ vaguear\ e\ controlar\ o\ tempo\ de\ recarga\r\n\ de\ ataques.\r\n\r\n\ @author\ Mateus\ Cunha\r\n\ @version\ 25/10/2026\r\n
+comment1.params=
+comment1.target=void\ atualizarRecarga()
+comment1.text=\r\n\ Diminui\ a\ recarga\ em\ um\ act.\ Deve\ ser\ chamado\ no\ in\u00EDcio\ do\ act\ do\ vil\u00E3o.\r\n
+comment2.params=
+comment2.target=boolean\ recargaPronta()
+comment2.text=\r\n\ Indica\ se\ o\ vil\u00E3o\ j\u00E1\ pode\ atacar\ novamente.\r\n\r\n\ @return\ true\ se\ a\ recarga\ terminou.\r\n
+comment3.params=duracao
+comment3.target=void\ iniciarRecarga(int)
+comment3.text=\r\n\ Inicia\ a\ recarga\ ap\u00F3s\ um\ ataque.\r\n\r\n\ @param\ duracao\ quantidade\ de\ acts\ at\u00E9\ o\ pr\u00F3ximo\ ataque.\r\n
+comment4.params=
+comment4.target=boolean\ jogadorPerto()
+comment4.text=\r\n\ Indica\ se\ o\ jogador\ est\u00E1\ dentro\ do\ alcance\ de\ percep\u00E7\u00E3o.\r\n\r\n\ @return\ true\ se\ h\u00E1\ um\ jogador\ por\ perto.\r\n
+comment5.params=velocidade
+comment5.target=void\ perseguir(int)
+comment5.text=\r\n\ Vira\ o\ vil\u00E3o\ na\ dire\u00E7\u00E3o\ do\ jogador\ e\ o\ move\ em\ sua\ dire\u00E7\u00E3o.\r\n\r\n\ @param\ velocidade\ pixels\ percorridos\ por\ act.\r\n
+comment6.params=velocidade
+comment6.target=void\ vaguear(int)
+comment6.text=\r\n\ Move\ o\ vil\u00E3o\ de\ forma\ aleat\u00F3ria,\ mudando\ de\ dire\u00E7\u00E3o\ de\ vez\ em\ quando.\r\n\r\n\ @param\ velocidade\ pixels\ percorridos\ por\ act.\r\n
+comment7.params=cooldown\ arquivoSomDaMordida
+comment7.target=void\ morder(int,\ java.lang.String)
+comment7.text=\r\n\ Se\ estiver\ encostando\ no\ jogador\ e\ a\ recarga\ terminou,\ morde\r\n\ (tira\ uma\ vida)\ e\ inicia\ a\ recarga.\r\n
+numComments=8
