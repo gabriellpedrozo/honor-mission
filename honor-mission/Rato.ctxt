@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Rato
-comment0.text=\n\ Rato\ que\ vagueia\ pelo\ mapa,\ persegue\ o\ jogador\ quando\ ele\ chega\ perto\n\ e\ o\ morde,\ tirando\ uma\ vida.\n\n\ @author\ Mateus\ Cunha\n\ @version\ 22/10/2026\n
+comment0.text=\r\n\ Rato\ que\ vagueia\ pelo\ mapa,\ persegue\ o\ jogador\ quando\ ele\ chega\ perto\r\n\ e\ o\ morde,\ tirando\ uma\ vida.\r\n\r\n\ @author\ Mateus\ Cunha\r\n\ @version\ 22/10/2026\r\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\n\ Persegue\ o\ jogador\ se\ ele\ estiver\ perto,\ sen\u00E3o\ vagueia.\n\ Em\ seguida\ tenta\ morder.\n
+comment1.text=\r\n\ Persegue\ o\ jogador\ se\ ele\ estiver\ perto,\ sen\u00E3o\ vagueia.\r\n\ Em\ seguida\ tenta\ morder.\r\n
 numComments=2

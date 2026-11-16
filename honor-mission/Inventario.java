@@ -10,11 +10,17 @@ public class Inventario
 {
     private ArrayList<ItemUtilizavel> itens;
 
+    /**
+     * Contrutor Inventario
+     */
     public Inventario()
     {
         itens = new ArrayList<ItemUtilizavel>();
     }
 
+    /**
+     * Adiciona Item ao Inventario
+     */
     public void adicionar(ItemUtilizavel item)
     {
         if (item != null)
@@ -23,6 +29,9 @@ public class Inventario
         }
     }
 
+    /**
+     * Consulta se tem o item no inventario
+     */
     public boolean contem(String nome)
     {
         for (ItemUtilizavel item : itens)
@@ -36,6 +45,9 @@ public class Inventario
         return false;
     }
 
+    /**
+     * Remove item do inventario
+     */
     public void remover(String nome)
     {
         for (int i = 0; i < itens.size(); i++)
@@ -48,6 +60,9 @@ public class Inventario
         }
     }
 
+    /**
+     * Verifica se os itens que tem no inventario e se eh consumivel, se for usa e remove do inventario, se nao tiver retorna falso;
+     */
     public boolean usar(String nome, Jogador jogador)
     {
         for (int i = 0; i < itens.size(); i++)
