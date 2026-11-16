@@ -27,6 +27,8 @@ public class Vigia extends Vilao
         this.limiteEsquerdo = limiteEsquerdo;
         this.limiteDireito = limiteDireito;
         patrulhandoOeste = false;
+        
+        setImage("vigia.png");
     }
 
     /**

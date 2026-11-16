@@ -11,6 +11,14 @@ public class Cachorro extends Vilao
     private static final int TEMPO_MORDIDA = 45; // morde mais rapido que o rato
     
     /**
+     * Construtor para cachorro.
+     */
+    public Cachorro()
+    {
+        setImage("cachorro_30x39.png");
+    }
+    
+    /**
      * O cachorro procura pelo jogador. Se o encontra, persegue-o e tenta morder.
      * Se nao, ele fica vagueando pelo mapa.
      */

@@ -22,5 +22,6 @@ public class Vassoura extends ItemUtilizavel
     public Vassoura()
     {
         super(NOME, "Permite atacar os ratos.");
+        setImage("vassoura.png");
     }
 }

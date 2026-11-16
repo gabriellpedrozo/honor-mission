@@ -10,7 +10,14 @@ import greenfoot.*;
 public class Rato extends Vilao
 {
     private static final int TEMPO_MORDIDA = 60; // acts entre mordidas (~1s)
-
+    
+    /**
+     * Construtor para a classe Rato.
+     */
+    public Rato() {
+        setImage("rato.png");
+    }
+    
     /**
      * Persegue o jogador se ele estiver perto, senão vagueia.
      * Em seguida tenta morder.

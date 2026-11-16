@@ -2,6 +2,9 @@
 comment0.target=Rato
 comment0.text=\n\ Rato\ que\ vagueia\ pelo\ mapa,\ persegue\ o\ jogador\ quando\ ele\ chega\ perto\n\ e\ o\ morde,\ tirando\ uma\ vida.\n\n\ @author\ Mateus\ Cunha\n\ @version\ 22/10/2026\n
 comment1.params=
-comment1.target=void\ act()
-comment1.text=\n\ Persegue\ o\ jogador\ se\ ele\ estiver\ perto,\ sen\u00E3o\ vagueia.\n\ Em\ seguida\ tenta\ morder.\n
-numComments=2
+comment1.target=Rato()
+comment1.text=\n\ Construtor\ para\ a\ classe\ Rato.\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\n\ Persegue\ o\ jogador\ se\ ele\ estiver\ perto,\ sen\u00E3o\ vagueia.\n\ Em\ seguida\ tenta\ morder.\n
+numComments=3
