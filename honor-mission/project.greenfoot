@@ -14,110 +14,90 @@ class.Vigia.image=vigia.png
 dependency1.from=TelaInstrucoes
 dependency1.to=BotaoVoltar
 dependency1.type=UsesDependency
-dependency10.from=CasaVigia
-dependency10.to=Jogador
+dependency10.from=Quartel
+dependency10.to=PassagemFase3
 dependency10.type=UsesDependency
 dependency11.from=CasaVigia
-dependency11.to=Vassoura
+dependency11.to=Jogador
 dependency11.type=UsesDependency
 dependency12.from=CasaVigia
-dependency12.to=Moeda
+dependency12.to=Vassoura
 dependency12.type=UsesDependency
 dependency13.from=CasaVigia
-dependency13.to=PainelVidas
+dependency13.to=Moeda
 dependency13.type=UsesDependency
 dependency14.from=CasaVigia
-dependency14.to=PainelPontuacao
+dependency14.to=PainelVidas
 dependency14.type=UsesDependency
 dependency15.from=CasaVigia
-dependency15.to=Passagem
+dependency15.to=PainelPontuacao
 dependency15.type=UsesDependency
 dependency16.from=CasaVigia
-dependency16.to=Obstaculo
+dependency16.to=Passagem
 dependency16.type=UsesDependency
-dependency17.from=Museu
-dependency17.to=Jogador
+dependency17.from=CasaVigia
+dependency17.to=Obstaculo
 dependency17.type=UsesDependency
-dependency18.from=Patio
+dependency18.from=Museu
 dependency18.to=Jogador
 dependency18.type=UsesDependency
 dependency19.from=Patio
-dependency19.to=Vigia
+dependency19.to=Jogador
 dependency19.type=UsesDependency
 dependency2.from=TelaInicial
 dependency2.to=BotaoIniciar
 dependency2.type=UsesDependency
 dependency20.from=Patio
-dependency20.to=Rato
+dependency20.to=Vigia
 dependency20.type=UsesDependency
 dependency21.from=Patio
-dependency21.to=PainelVidas
+dependency21.to=Rato
 dependency21.type=UsesDependency
 dependency22.from=Patio
-dependency22.to=PainelPontuacao
+dependency22.to=PainelVidas
 dependency22.type=UsesDependency
 dependency23.from=Patio
-dependency23.to=CasaVigia
+dependency23.to=PainelPontuacao
 dependency23.type=UsesDependency
 dependency24.from=Patio
-dependency24.to=Passagem
+dependency24.to=CasaVigia
 dependency24.type=UsesDependency
 dependency25.from=Patio
-dependency25.to=Obstaculo
+dependency25.to=Passagem
 dependency25.type=UsesDependency
 dependency26.from=Patio
-dependency26.to=Quartel
+dependency26.to=Obstaculo
 dependency26.type=UsesDependency
 dependency27.from=Patio
-dependency27.to=PassagemFase2
+dependency27.to=Quartel
 dependency27.type=UsesDependency
-dependency28.from=BotaoIniciar
-dependency28.to=Patio
+dependency28.from=Patio
+dependency28.to=PassagemFase2
 dependency28.type=UsesDependency
 dependency29.from=BotaoIniciar
-dependency29.to=MusicaFundo
+dependency29.to=Patio
 dependency29.type=UsesDependency
 dependency3.from=TelaInicial
 dependency3.to=BotaoInstrucoes
 dependency3.type=UsesDependency
-dependency30.from=BotaoInstrucoes
-dependency30.to=TelaInstrucoes
+dependency30.from=BotaoIniciar
+dependency30.to=MusicaFundo
 dependency30.type=UsesDependency
-dependency31.from=BotaoVoltar
-dependency31.to=TelaInicial
+dependency31.from=BotaoInstrucoes
+dependency31.to=TelaInstrucoes
 dependency31.type=UsesDependency
-dependency32.from=Vilao
-dependency32.to=Jogador
+dependency32.from=BotaoVoltar
+dependency32.to=TelaInicial
 dependency32.type=UsesDependency
-dependency33.from=Vigia
+dependency33.from=Vilao
 dependency33.to=Jogador
 dependency33.type=UsesDependency
 dependency34.from=Vigia
-dependency34.to=Tiro
+dependency34.to=Jogador
 dependency34.type=UsesDependency
-dependency35.from=ItemUtilizavel
-dependency35.to=Jogador
+dependency35.from=Vigia
+dependency35.to=Tiro
 dependency35.type=UsesDependency
-<<<<<<< Updated upstream
-dependency36.from=PainelVidas
-=======
-<<<<<<< Updated upstream
-dependency36.from=BotaoLaser
->>>>>>> Stashed changes
-dependency36.to=Jogador
-dependency36.type=UsesDependency
-dependency37.from=PainelPontuacao
-dependency37.to=Jogador
-dependency37.type=UsesDependency
-dependency38.from=Passagem
-dependency38.to=Jogador
-dependency38.type=UsesDependency
-<<<<<<< Updated upstream
-dependency39.from=PassagemFase2
-dependency39.to=Rato
-=======
-dependency39.from=PainelVidas
-=======
 dependency36.from=ItemUtilizavel
 dependency36.to=Jogador
 dependency36.type=UsesDependency
@@ -128,52 +108,11 @@ dependency38.from=PainelPontuacao
 dependency38.to=Jogador
 dependency38.type=UsesDependency
 dependency39.from=Passagem
->>>>>>> Stashed changes
 dependency39.to=Jogador
->>>>>>> Stashed changes
 dependency39.type=UsesDependency
 dependency4.from=Quartel
 dependency4.to=Jogador
 dependency4.type=UsesDependency
-<<<<<<< Updated upstream
-dependency40.from=Tiro
-dependency40.to=Obstaculo
-=======
-<<<<<<< Updated upstream
-dependency40.from=PainelPontuacao
-dependency40.to=Jogador
->>>>>>> Stashed changes
-dependency40.type=UsesDependency
-dependency41.from=Tiro
-dependency41.to=Jogador
-dependency41.type=UsesDependency
-dependency42.from=Obstaculo
-dependency42.to=Jogador
-dependency42.type=UsesDependency
-dependency43.from=Obstaculo
-dependency43.to=Vilao
-dependency43.type=UsesDependency
-dependency44.from=Jogador
-dependency44.to=Inventario
-dependency44.type=UsesDependency
-dependency45.from=Jogador
-dependency45.to=Colecao
-dependency45.type=UsesDependency
-dependency46.from=Jogador
-dependency46.to=TelaInicial
-dependency46.type=UsesDependency
-dependency47.from=Jogador
-dependency47.to=Rato
-dependency47.type=UsesDependency
-dependency48.from=Jogador
-dependency48.to=ItemUtilizavel
-dependency48.type=UsesDependency
-dependency49.from=Jogador
-<<<<<<< Updated upstream
-dependency49.to=ItemColecionavel
-=======
-dependency49.to=TelaInicial
-=======
 dependency40.from=PassagemFase2
 dependency40.to=Rato
 dependency40.type=UsesDependency
@@ -203,50 +142,11 @@ dependency48.to=Rato
 dependency48.type=UsesDependency
 dependency49.from=Jogador
 dependency49.to=ItemUtilizavel
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 dependency49.type=UsesDependency
 dependency5.from=Quartel
 dependency5.to=PainelVidas
 dependency5.type=UsesDependency
 dependency50.from=Jogador
-<<<<<<< Updated upstream
-dependency50.to=Item
-=======
-<<<<<<< Updated upstream
-dependency50.to=Rato
->>>>>>> Stashed changes
-dependency50.type=UsesDependency
-dependency51.from=Jogador
-dependency51.to=MusicaFundo
-dependency51.type=UsesDependency
-dependency52.from=Jogador
-dependency52.to=Vassoura
-dependency52.type=UsesDependency
-dependency53.from=Colecao
-dependency53.to=ItemColecionavel
-dependency53.type=UsesDependency
-dependency54.from=Inventario
-dependency54.to=ItemUtilizavel
-dependency54.type=UsesDependency
-dependency55.from=Inventario
-dependency55.to=Jogador
-dependency55.type=UsesDependency
-<<<<<<< Updated upstream
-=======
-dependency56.from=Jogador
-dependency56.to=Lasers
-dependency56.type=UsesDependency
-dependency57.from=Colecao
-dependency57.to=ItemColecionavel
-dependency57.type=UsesDependency
-dependency58.from=Inventario
-dependency58.to=ItemUtilizavel
-dependency58.type=UsesDependency
-dependency59.from=Inventario
-dependency59.to=Jogador
-dependency59.type=UsesDependency
-=======
 dependency50.to=ItemColecionavel
 dependency50.type=UsesDependency
 dependency51.from=Jogador
@@ -267,8 +167,6 @@ dependency55.type=UsesDependency
 dependency56.from=Inventario
 dependency56.to=Jogador
 dependency56.type=UsesDependency
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 dependency6.from=Quartel
 dependency6.to=PainelPontuacao
 dependency6.type=UsesDependency
@@ -281,31 +179,13 @@ dependency8.type=UsesDependency
 dependency9.from=Quartel
 dependency9.to=Passagem
 dependency9.type=UsesDependency
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=552
-editor.fx.0.y=100
-height=1056
-package.numDependencies=59
-package.numTargets=33
-=======
->>>>>>> Stashed changes
 editor.fx.0.height=737
 editor.fx.0.width=800
-editor.fx.0.x=722
-editor.fx.0.y=170
+editor.fx.0.x=539
+editor.fx.0.y=134
 height=1048
-<<<<<<< Updated upstream
-package.numDependencies=55
-package.numTargets=31
-=======
 package.numDependencies=56
 package.numTargets=31
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -419,30 +299,14 @@ target21.width=120
 target21.x=0
 target21.y=0
 target22.height=70
-<<<<<<< Updated upstream
-target22.name=Vassoura
-=======
-<<<<<<< Updated upstream
-target22.name=Passagem
-=======
 target22.name=PassagemFase3
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 target22.showInterface=false
 target22.type=ClassTarget
 target22.width=120
 target22.x=0
 target22.y=0
 target23.height=70
-<<<<<<< Updated upstream
-target23.name=PassagemFase3
-=======
-<<<<<<< Updated upstream
-target23.name=PassagemFase2
-=======
 target23.name=Vassoura
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 target23.showInterface=false
 target23.type=ClassTarget
 target23.width=120
