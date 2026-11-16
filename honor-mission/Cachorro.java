@@ -11,11 +11,11 @@ public class Cachorro extends Vilao
     private static final int TEMPO_MORDIDA = 45; // morde mais rapido que o rato
     
     /**
-     * Construtor para cachorro.
+     * Construtor cachorro.
      */
     public Cachorro()
     {
-        setImage("cachorro_30x39.png");
+        setImage("cachorro_mini.png");
     }
     
     /**

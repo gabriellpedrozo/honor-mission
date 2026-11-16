@@ -47,6 +47,9 @@ public class Patio extends World
         Jogador.reiniciarPontuacao();
         PainelPontuacao painelPontuacao = new PainelPontuacao(100, getHeight() -25);
         painelPontuacao.adicionarAoMundo(this);
+        
+        //reinicia lasers museu
+        Museu.reiniciarLasers();
 
         // configuracoes da passagem
         CasaVigia casaVigia = new CasaVigia(this);

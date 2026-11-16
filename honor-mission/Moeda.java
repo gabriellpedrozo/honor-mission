@@ -13,5 +13,6 @@ public class Moeda extends ItemColecionavel
     public Moeda()
     {
         super(NOME, "Uma moeda encontrada pelo caminho.", 100);
+        setImage("moeda.png");
     }
 }

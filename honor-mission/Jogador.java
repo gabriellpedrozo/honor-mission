@@ -5,7 +5,7 @@ import java.util.List;
  * Representa o player: soldado que vai cumprir a missao no TG.
  * 
  * @author (Mateus Cunha && Gabriel Pedrozo) 
- * @version (08/11/2026)
+ * @version (15/11/2026)
  */
 public class Jogador extends Actor
 {
@@ -57,6 +57,7 @@ public class Jogador extends Actor
         }
 
         movimentar();
+        verificarLaser();
         coletarItem();
         atacar();
     }
@@ -274,4 +275,14 @@ public class Jogador extends Actor
         ePressionado = eAgora;
     }
 
+    /**
+     * Verifica se o Jogador encostrou no laser e tira vida ao encostar
+     */
+    private void verificarLaser()
+    {
+        if(isTouching(Lasers.class))
+        {
+            perderVida();
+        }
+    }
 }
