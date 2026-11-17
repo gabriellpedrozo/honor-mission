@@ -44,7 +44,7 @@ public class Patio extends World
         painelVidas.adicionarAoMundo(this);
 
         //responsavel pelos pontos e sua exibição
-        Jogador.reiniciarPontuacao();
+        Pontuacao.reiniciar();
         PainelPontuacao painelPontuacao = new PainelPontuacao(100, getHeight() -25);
         painelPontuacao.adicionarAoMundo(this);
         

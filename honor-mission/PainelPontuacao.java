@@ -23,7 +23,7 @@ public class PainelPontuacao extends Painel
      */
     public void atualizar()
     {
-        int pontuacao = Jogador.getPontuacao();
+        int pontuacao = Pontuacao.getTotal();
 
         GreenfootImage imagem = new GreenfootImage(190, 45);
 

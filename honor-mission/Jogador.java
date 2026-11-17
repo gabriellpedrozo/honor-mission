@@ -11,13 +11,10 @@ public class Jogador extends Actor
 {
     // atributos constantes para evitar numeros soltos
     private static final int VELOCIDADE = 4;
-    private static final int ALCANCE_VASSOURADA = 70;
     private static final int ALCANCE_COLETA = 50;
-    private static final int PONTOS_POR_RATO = 50;
     
     private boolean espacoPressionado; // evita repetir o golpe enquanto segura a tecla
     private boolean ePressionado; // evita repetir acao enquanto segura a tecla
-    private static int pontuacao = 0;
     private Inventario inventario;
     private Colecao colecao;
     private String sufixoImagem; // complemento do nome da imagem (ex.: "_casa")
@@ -130,36 +127,6 @@ public class Jogador extends Actor
         espacoPressionado = espacoAgora;
     }
 
-    //metodos para pontuação
-    /**
-     * Retorna a pontuação atual do jogador.
-     */
-    public static int getPontuacao()
-    {
-        return pontuacao;
-    }
-
-    /**
-     * Adiciona pontos à pontuação atual.
-     *
-     * @param pontos quantidade de pontos recebida.
-     */
-    public static void adicionarPontos(int pontos)
-    {
-        if (pontos > 0)
-        {
-            pontuacao += pontos;
-        }
-    }
-
-    /**
-     * Reinicia a pontuação ao iniciar uma nova partida.
-     */
-    public static void reiniciarPontuacao()
-    {
-        pontuacao = 0;
-    }
-
     //metodos itens 
     /**
      * Adiciona um item utilizável ao inventário.
@@ -182,7 +149,7 @@ public class Jogador extends Actor
         if (item != null)
         {
             colecao.adicionar(item);
-            adicionarPontos(item.getPontos());
+            Pontuacao.adicionar(item.getPontos());
         }
     }
 

@@ -40,7 +40,7 @@ public class Vassoura extends ItemUtilizavel
             if ( (Math.abs(rato.getX() - jogador.getX()) < ALCANCE) &&
             (Math.abs(rato.getY() - jogador.getY()) < ALCANCE) ) {
                 jogador.getWorld().removeObject(rato);
-                Jogador.adicionarPontos(PONTOS_POR_RATO);
+                Pontuacao.adicionar(PONTOS_POR_RATO);
                 Greenfoot.playSound("rato_morrendo.wav");
             }
         }
