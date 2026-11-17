@@ -5,7 +5,7 @@ import greenfoot.*;
  * @author Gabriel Pedrozo && Mateus Cunha
  * @version 24/10/2026
  */
-public class CasaVigia  extends World
+public class CasaVigia extends World
 {
     private World mundoAnterior;
 

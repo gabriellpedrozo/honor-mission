@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Jogador
-comment0.text=\n\ Representa\ o\ player\:\ soldado\ que\ vai\ cumprir\ a\ missao\ no\ TG.\n\ \n\ @author\ (Mateus\ Cunha\ &&\ Gabriel\ Pedrozo)\ \n\ @version\ (08/11/2026)\n
+comment0.text=\n\ Representa\ o\ player\:\ soldado\ que\ vai\ cumprir\ a\ missao\ no\ TG.\n\ \n\ @author\ (Mateus\ Cunha\ &&\ Gabriel\ Pedrozo)\ \n\ @version\ (15/11/2026)\n
 comment1.params=
 comment1.target=Jogador()
 comment1.text=\n\ Construtor\ padrao\ para\ Jogador\n
@@ -30,6 +30,9 @@ comment17.text=\n\ Transfere\ o\ inventario\ e\ a\ colecao\ para\ o\ jogador\ do
 comment18.params=
 comment18.target=void\ coletarItem()
 comment18.text=\n\ Verifica\ se\ o\ jogador\ pode\ coletar\ um\ item\ pr\u00F3ximo.\n
+comment19.params=
+comment19.target=void\ verificarLaser()
+comment19.text=\n\ Verifica\ se\ o\ Jogador\ encostrou\ no\ laser\ e\ tira\ vida\ ao\ encostar\n
 comment2.params=
 comment2.target=void\ act()
 comment2.text=\n\ A\ cada\ act\:\ verifica\ fim\ de\ jogo,\ reduz\ a\ invulnerabilidade,\n\ e\ trata\ movimento,\ coleta\ de\ itens\ e\ ataque.\n
@@ -54,4 +57,4 @@ comment8.text=\n\ Metodo\ de\ acesso\ a\ quantidade\ de\ vidas\ do\ jogador.\n
 comment9.params=
 comment9.target=void\ perderVida()
 comment9.text=\n\ Tira\ uma\ vida\ do\ jogador,\ se\ ele\ ainda\ tiver\ vidas\ e\ n\u00E3o\ estiver\n\ invulner\u00E1vel.\ Ap\u00F3s\ levar\ dano,\ fica\ 30\ acts\ (~0,5s)\ invulner\u00E1vel.\n
-numComments=19
+numComments=20

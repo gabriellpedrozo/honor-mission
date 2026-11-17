@@ -13,13 +13,15 @@ public class Museu extends World
 {
     private static boolean lasersAtivos = true;
     private boolean estadoAtualizado = false;
+    private World mundoAnterior;
 
     /**
      * Cria o mundo Museu e prepara o cenário.
      */
-    public Museu()
+    public Museu(World quartel)
     {
         super(1000, 750, 1);
+        this.mundoAnterior = quartel;
 
         if (lasersAtivos)
         {
@@ -84,6 +86,10 @@ public class Museu extends World
         //responsavel pelos pontos e sua exibição
         PainelPontuacao painelPontuacao = new PainelPontuacao(100, getHeight() -25);
         painelPontuacao.adicionarAoMundo(this);
+        
+        // configuracoes da passagem de volta para o quartel
+        Passagem saida = new Passagem (25, 78, mundoAnterior, 139, 367);
+        addObject(saida, 926, 389);
 
         if (lasersAtivos)
         {
