@@ -23,6 +23,7 @@ public class Cartao extends ItemUtilizavel
      * Ao usar o cartao, se tiver o jogador estiver no quartel e a porta
      * estiver bloqueada, ocorre o desbloqueio e retorna true.
      */
+    @Override
     protected boolean usar(Jogador jogador) {
         return true;
     }

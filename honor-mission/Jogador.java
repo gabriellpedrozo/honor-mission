@@ -131,16 +131,8 @@ public class Jogador extends Actor
         boolean espacoAgora = Greenfoot.isKeyDown("space");
 
         // so ataca no momento em que a tecla eh apertada (nao enquanto segura)
-        if (espacoAgora && !espacoPressionado && inventario.contem(Vassoura.NOME)) {
-            Greenfoot.playSound("vassourada.wav");
-
-            List<Rato> ratos = getObjectsInRange(ALCANCE_VASSOURADA, Rato.class);
-
-            for (Rato rato : ratos) {
-                getWorld().removeObject(rato);
-                adicionarPontos(PONTOS_POR_RATO);
-                Greenfoot.playSound("rato_morrendo.wav");
-            }
+        if (espacoAgora && !espacoPressionado) {
+            inventario.usar(Vassoura.NOME, this);
         }
 
         espacoPressionado = espacoAgora;
