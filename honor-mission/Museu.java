@@ -90,6 +90,10 @@ public class Museu extends World
         // configuracoes da passagem de volta para o quartel
         Passagem saida = new Passagem (25, 78, mundoAnterior, 139, 367);
         addObject(saida, 926, 389);
+        
+        // adicionando os itens do museu
+        Cartao cartao = new Cartao();
+        addObject(cartao, 74, 363);
 
         if (lasersAtivos)
         {

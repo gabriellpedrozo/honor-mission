@@ -42,12 +42,12 @@ public class ItemUtilizavel extends Item
     }
 
     /**
-     * Usa o item sobre o jogador. Por enquanto não faz nada.
+     * Usa o item sobre o jogador. Por enquanto não faz nada, deve ser sobrescrito.
      *
      * @param jogador jogador que está usando o item.
      * @return true se o item foi realmente usado.
      */
-    public boolean usar(Jogador jogador)
+    protected boolean usar(Jogador jogador)
     {
         return false;
     }

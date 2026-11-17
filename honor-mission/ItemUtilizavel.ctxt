@@ -12,5 +12,5 @@ comment3.target=boolean\ isConsumivel()
 comment3.text=\n\ @return\ true\ se\ o\ item\ \u00E9\ consumido\ ao\ ser\ usado.\n
 comment4.params=jogador
 comment4.target=boolean\ usar(Jogador)
-comment4.text=\n\ Usa\ o\ item\ sobre\ o\ jogador.\ Por\ enquanto\ n\u00E3o\ faz\ nada.\n\n\ @param\ jogador\ jogador\ que\ est\u00E1\ usando\ o\ item.\n\ @return\ true\ se\ o\ item\ foi\ realmente\ usado.\n
+comment4.text=\n\ Usa\ o\ item\ sobre\ o\ jogador.\ Por\ enquanto\ n\u00E3o\ faz\ nada,\ deve\ ser\ sobrescrito.\n\n\ @param\ jogador\ jogador\ que\ est\u00E1\ usando\ o\ item.\n\ @return\ true\ se\ o\ item\ foi\ realmente\ usado.\n
 numComments=5
