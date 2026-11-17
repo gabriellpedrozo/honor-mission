@@ -57,7 +57,6 @@ public class Jogador extends Actor
         }
 
         movimentar();
-        verificarLaser();
         coletarItem();
         atacar();
     }
@@ -265,16 +264,5 @@ public class Jogador extends Actor
         }
 
         ePressionado = eAgora;
-    }
-
-    /**
-     * Verifica se o Jogador encostrou no laser e tira vida ao encostar
-     */
-    private void verificarLaser()
-    {
-        if(isTouching(Lasers.class))
-        {
-            perderVida();
-        }
     }
 }

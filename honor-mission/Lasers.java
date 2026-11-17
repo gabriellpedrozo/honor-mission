@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Lasers here.
+ * Laser do museu: causa dano ao jogador que encostar nele.
  * 
- * @author (Gabriel Pedrozo) 
- * @version (15/11/2026)
+ * @author Gabriel Pedrozo && Mateus Cunha
+ * @version 15/11/2026
  */
 public class Lasers extends Actor
 {
     /**
-     * Construtor dos Lasers
+     * Cria um laser com o tamanho informado
      */
     public Lasers (int largura, int altura)
     {
@@ -21,11 +21,13 @@ public class Lasers extends Actor
     }
     
     /**
-     * Act - do whatever the Lasers wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Se o jogador estiver encostando no laser, ele perde uma vida.
      */
     public void act()
     {
-        // Add your action code here.
+        if (isTouching(Jogador.class))
+        {
+            Jogador.perderVida();
+        }
     }
 }
