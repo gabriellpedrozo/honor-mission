@@ -13,14 +13,10 @@ public class Jogador extends Actor
     private static final int VELOCIDADE = 4;
     private static final int ALCANCE_VASSOURADA = 70;
     private static final int ALCANCE_COLETA = 50;
-    private static final int TEMPO_INVULNERAVEL = 30;
-    private static final int VIDAS_INICIAIS = 3;
     private static final int PONTOS_POR_RATO = 50;
     
     private boolean espacoPressionado; // evita repetir o golpe enquanto segura a tecla
     private boolean ePressionado; // evita repetir acao enquanto segura a tecla
-    private static int vidas = VIDAS_INICIAIS; // atributo para vidas
-    private static int invulneravel = 0; // acts restantes sem poder levar dano
     private static int pontuacao = 0;
     private Inventario inventario;
     private Colecao colecao;
@@ -45,17 +41,14 @@ public class Jogador extends Actor
      */
     public void act()
     {
-        if (vidas <= 0) {
+        if (Vidas.acabaram()) {
             MusicaFundo.parar();
             Greenfoot.playSound("game_over.wav");
             Greenfoot.setWorld(new TelaInicial());
             return;
         }
-
-        if (invulneravel > 0) {
-            invulneravel--;
-        }
-
+        Vidas.passarTempo();
+    
         movimentar();
         coletarItem();
         atacar();
@@ -135,38 +128,6 @@ public class Jogador extends Actor
         }
 
         espacoPressionado = espacoAgora;
-    }
-
-    //metodos vidas
-    /**
-     * Metodo de acesso a quantidade de vidas do jogador.
-     */
-    public static int getVidas()
-    {
-        return vidas;
-    }
-
-    /**
-     * Tira uma vida do jogador, se ele ainda tiver vidas e não estiver
-     * invulnerável. Após levar dano, fica 30 acts (~0,5s) invulnerável.
-     */
-    public static void perderVida()
-    {
-        if (vidas > 0 && invulneravel == 0)
-        {
-            vidas--;
-            invulneravel = TEMPO_INVULNERAVEL; // ~0,5s de proteção com valor 30
-            Greenfoot.playSound("dano.wav");
-        }
-    }
-
-    /**
-     *  Metodo para as vidas voltarem ao reiniciar a partida
-     */
-    public static void reiniciarVidas()
-    {
-        vidas = VIDAS_INICIAIS;
-        invulneravel = 0;
     }
 
     //metodos para pontuação

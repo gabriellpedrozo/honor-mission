@@ -28,7 +28,7 @@ public class PainelVidas extends Painel
      */
     public void atualizar()
     {
-        int quantidade = Jogador.getVidas();
+        int quantidade = Vidas.getQuantidade();
 
         GreenfootImage imagem = new GreenfootImage(120, 40);
         imagem.setColor(new Color(0, 0, 0, 0));

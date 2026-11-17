@@ -96,7 +96,7 @@ public class Vilao extends Actor
     {
         if (recargaPronta() && isTouching(Jogador.class))
         {
-            Jogador.perderVida();
+            Vidas.perder();
             iniciarRecarga(cooldown);
             Greenfoot.playSound(arquivoSomDaMordida);
         }

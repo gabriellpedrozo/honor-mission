@@ -35,7 +35,7 @@ public class Tiro extends Actor
         }
 
         if (isTouching(Jogador.class)) {
-            Jogador.perderVida();
+            Vidas.perder();
             getWorld().removeObject(this);
         }
 

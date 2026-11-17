@@ -38,7 +38,7 @@ public class Patio extends World
         addObject(rato4,375,313);
         
         //Responsavel pelas vidas e sua exibição
-        Jogador.reiniciarVidas();//reinicia as vidas ao recomeçar
+        Vidas.reiniciar();//reinicia as vidas ao recomeçar
         //getHeight posiciona o painel próximo à parte inferior do mundo(independente dos pxs).
         PainelVidas painelVidas = new PainelVidas(getWidth() - 80, getHeight() - 25);
         painelVidas.adicionarAoMundo(this);

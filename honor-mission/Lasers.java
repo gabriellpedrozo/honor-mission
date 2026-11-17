@@ -27,7 +27,7 @@ public class Lasers extends Actor
     {
         if (isTouching(Jogador.class))
         {
-            Jogador.perderVida();
+            Vidas.perder();
         }
     }
 }
