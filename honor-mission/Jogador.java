@@ -188,4 +188,12 @@ public class Jogador extends Actor
             }
         }
     }
+    
+    // metodo de ambiente
+    /**
+     * Retorna os Viloes que estao proximos.
+     */
+    public List<Vilao> getViloesNoAlcance(int alcance) {
+        return getObjectsInRange(alcance, Vilao.class);
+    }
 }

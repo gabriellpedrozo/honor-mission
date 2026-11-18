@@ -10,6 +10,7 @@ import greenfoot.*;
 public class Rato extends Vilao
 {
     private static final int TEMPO_MORDIDA = 60; // acts entre mordidas (~1s)
+    private static final int PONTOS_AO_MORRER = 50;
     
     /**
      * Construtor para a classe Rato.
@@ -36,5 +37,16 @@ public class Rato extends Vilao
         }
 
         morder(TEMPO_MORDIDA, "mordida.wav");
+    }
+    
+    /**
+     * O rato morre com um golpe: sai do mundo, dá pontos e toca o som de morte.
+     */
+    @Override
+    public void sofrerVassourada()
+    {
+        Pontuacao.adicionar(PONTOS_AO_MORRER);
+        Greenfoot.playSound("rato_morrendo.wav");
+        getWorld().removeObject(this);
     }
 }

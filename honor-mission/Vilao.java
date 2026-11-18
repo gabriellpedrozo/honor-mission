@@ -101,4 +101,10 @@ public class Vilao extends Actor
             Greenfoot.playSound(arquivoSomDaMordida);
         }
     }
+    
+    /**
+     * Reação do vilão a uma vassourada. Por padrão o vilão é imune;
+     * subclasses vulneráveis sobrescrevem este método.
+     */
+    public void sofrerVassourada() { }
 }
