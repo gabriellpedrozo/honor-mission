@@ -20,11 +20,11 @@ public class Partida
      */
     public static void iniciar()
     {
-        Greenfoot.setWorld(new Patio());
         Vidas.reiniciar();
         Pontuacao.reiniciar();
         Museu.reiniciarLasers();
         MusicaFundo.tocar();
+        Greenfoot.setWorld(new Patio());
     }
     
     /**

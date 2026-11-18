@@ -6,7 +6,7 @@ import greenfoot.*;
  * @author Gabriel Pedrozo && Mateus Cunha
  * @version 10/11/2026
  */
-public class Item extends Actor
+public abstract class Item extends Actor
 {
     private String nome;
     private String descricao;
@@ -38,4 +38,12 @@ public class Item extends Actor
     {
         return descricao;
     }
+    
+    /**
+     * Define o que acontece quando o jogador coleta este item.
+     * Cada tipo de item decide onde ele é guardado.
+     *
+     * @param jogador jogador que coletou o item.
+     */
+    public abstract void coletadoPor(Jogador jogador);
 }

@@ -20,7 +20,16 @@ public class ItemColecionavel extends Item
         super(nome, descricao);
         this.pontos = pontos;
     }
-
+    
+    /**
+     * Ao ser coletado, vai para a coleção do jogador e soma pontos.
+     */
+    @Override
+    public void coletadoPor(Jogador jogador)
+    {
+        jogador.adicionarNaColecao(this);
+    }
+    
     /**
      * @return os pontos que o item vale.
      */

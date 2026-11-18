@@ -38,8 +38,7 @@ public class Jogador extends Actor
     }
 
     /**
-     * A cada act: verifica fim de jogo, reduz a invulnerabilidade,
-     * e trata movimento, coleta de itens e ataque.
+     * A cada act: Trata acoes particulares do jogador.
      */
     public void act()
     {
@@ -182,16 +181,8 @@ public class Jogador extends Actor
             if (!itens.isEmpty())
             {
                 Item item = itens.get(0);
-
-                if (item instanceof ItemUtilizavel)
-                {
-                    adicionarAoInventario((ItemUtilizavel) item);
-                }
-                else if (item instanceof ItemColecionavel)
-                {
-                    adicionarNaColecao((ItemColecionavel) item);
-                }
-
+                item.coletadoPor(this);
+                
                 getWorld().removeObject(item);
                 Greenfoot.playSound("pegar_item.wav");
             }

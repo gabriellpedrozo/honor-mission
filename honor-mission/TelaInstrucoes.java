@@ -11,7 +11,7 @@ public class TelaInstrucoes extends World
 {
     public TelaInstrucoes()
     {
-        super(1000, 740, 1);
+        super(1000, 750, 1);
 
         // Carrega a imagem de fundo.
         GreenfootImage fundo = new GreenfootImage("instrucoes.png");

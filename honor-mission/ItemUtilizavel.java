@@ -32,7 +32,16 @@ public class ItemUtilizavel extends Item
         super(nome, descricao);
         this.consumivel = consumivel;
     }
-
+    
+    /**
+     * Ao ser coletado, vai para o inventário do jogador.
+     */
+    @Override
+    public void coletadoPor(Jogador jogador)
+    {
+        jogador.adicionarAoInventario(this);
+    }
+    
     /**
      * @return true se o item é consumido ao ser usado.
      */
