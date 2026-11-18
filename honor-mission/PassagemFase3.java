@@ -35,6 +35,14 @@ public class PassagemFase3 extends Passagem
     
     @Override
     protected String mensagemBloqueio() {
-        return "Destranque a porta com a chave!";
+        return "Destranque a porta usando o cartao!";
+    }
+    
+    /**
+     * @return true se a porta ainda esta trancada.
+     */
+    public boolean estaTrancada()
+    {
+        return trancado;
     }
 }

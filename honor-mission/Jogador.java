@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.List;
-
+ 
 /**
  * Representa o player: soldado que vai cumprir a missao no TG.
  * 
@@ -15,6 +15,8 @@ public class Jogador extends Actor
     
     private boolean espacoPressionado; // evita repetir o golpe enquanto segura a tecla
     private boolean ePressionado; // evita repetir acao enquanto segura a tecla
+    private boolean cPressionado; // evita repetir o uso do cartao enquanto segura a tecla
+    
     private Inventario inventario;
     private Colecao colecao;
     private String sufixoImagem; // complemento do nome da imagem (ex.: "_casa")
@@ -26,12 +28,15 @@ public class Jogador extends Actor
     {
         espacoPressionado = false;
         ePressionado = false;
+        cPressionado = false;
+        
         inventario = new Inventario();
         colecao = new Colecao();
+        
         sufixoImagem = "";
         setImage("jogador_frente.png");
     }
-
+ 
     /**
      * A cada act: verifica fim de jogo, reduz a invulnerabilidade,
      * e trata movimento, coleta de itens e ataque.
@@ -49,8 +54,9 @@ public class Jogador extends Actor
         movimentar();
         coletarItem();
         atacar();
+        usarCartao();
     }
-
+ 
     /**
      * Faz o jogador se movimentar pelo mapa
      */
@@ -118,15 +124,32 @@ public class Jogador extends Actor
      */
     private void atacar() {
         boolean espacoAgora = Greenfoot.isKeyDown("space");
-
+ 
         // so ataca no momento em que a tecla eh apertada (nao enquanto segura)
         if (espacoAgora && !espacoPressionado) {
             inventario.usar(Vassoura.NOME, this);
         }
-
+ 
         espacoPressionado = espacoAgora;
     }
 
+    /**
+     * Se o jogador apertar C, tenta usar o cartao do inventario.
+     * O cartao so eh consumido se realmente destrancar alguma porta.
+     */
+    private void usarCartao()
+    {
+        boolean cAgora = Greenfoot.isKeyDown("c");
+    
+        // so age no momento em que a tecla eh apertada (nao enquanto segura)
+        if (cAgora && !cPressionado)
+        {
+            inventario.usar(Cartao.NOME, this);
+        }
+    
+        cPressionado = cAgora;
+    }
+    
     //metodos itens 
     /**
      * Adiciona um item utilizável ao inventário.
@@ -135,12 +158,15 @@ public class Jogador extends Actor
     {
         inventario.adicionar(item);
     }
-
+    
+    /**
+     * Retorna o inventario do jogador.
+     */
     public Inventario getInventario()
     {
         return inventario;
     }
-
+ 
     /**
      * Adiciona um item colecionável à coleção.
      */
@@ -152,7 +178,7 @@ public class Jogador extends Actor
             Pontuacao.adicionar(item.getPontos());
         }
     }
-
+ 
     /**
      * Transfere o inventario e a colecao para o jogador do proximo mundo.
      */
@@ -161,22 +187,22 @@ public class Jogador extends Actor
         destino.inventario = this.inventario;
         destino.colecao = this.colecao;
     }
-
+ 
     /**
      * Verifica se o jogador pode coletar um item próximo.
      */
     private void coletarItem()
     {
         boolean eAgora = Greenfoot.isKeyDown("e");
-
+ 
         if (eAgora && !ePressionado)
         {
             List<Item> itens = getObjectsInRange(ALCANCE_COLETA, Item.class);
-
+ 
             if (!itens.isEmpty())
             {
                 Item item = itens.get(0);
-
+ 
                 if (item instanceof ItemUtilizavel)
                 {
                     adicionarAoInventario((ItemUtilizavel) item);
@@ -185,12 +211,12 @@ public class Jogador extends Actor
                 {
                     adicionarNaColecao((ItemColecionavel) item);
                 }
-
+ 
                 getWorld().removeObject(item);
                 Greenfoot.playSound("pegar_item.wav");
             }
         }
-
+ 
         ePressionado = eAgora;
     }
 }

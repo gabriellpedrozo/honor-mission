@@ -15,7 +15,14 @@ public class Quartel extends World
         super(1000, 750, 1);
         prepare();
     }
-     
+    
+    /**
+     * Retorna a passagem para a fase 3. Ajuda no desbloqueio com cartao.
+     */
+    public PassagemFase3 getPassagemFase3() {
+        return this.getObjects(PassagemFase3.class).get(0);
+    }
+    
     /**
      * Prepara o mundo para o início do programa.
      * Ou seja: criar os objetos iniciais e adicioná-los ao mundo.

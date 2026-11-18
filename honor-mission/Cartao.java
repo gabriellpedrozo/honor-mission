@@ -25,6 +25,18 @@ public class Cartao extends ItemUtilizavel
      */
     @Override
     protected boolean usar(Jogador jogador) {
-        return true;
+        World mundo = jogador.getWorld();
+        
+        if (mundo instanceof Quartel) { // ver se o jogador esta realmente no quartel
+            PassagemFase3 passagem = ((Quartel) mundo).getPassagemFase3();
+            if (passagem.estaTrancada()) {
+                passagem.destrancar();
+                Greenfoot.playSound("abrindo_porta.wav");
+            
+                return true;
+            }
+        }
+        
+        return false;
     }
 }
