@@ -65,6 +65,44 @@ public class Vilao extends Actor
     }
     
     /**
+     * Procura o jogador em qualquer lugar do mundo, sem limite de alcance.
+     *
+     * @return o jogador, ou null se não houver nenhum no mundo.
+     */
+    protected Jogador getJogadorNoMundo()
+    {
+        List<Jogador> jogadores = getWorld().getObjects(Jogador.class);
+
+        if (jogadores.isEmpty())
+        {
+            return null;
+        }
+
+        return jogadores.get(0);
+    }
+    
+    /**
+     * Atira na direção do jogador, respeitando o tempo de recarga.
+     *
+     * @param alvo jogador que será alvo do tiro.
+     * @param cooldown quantidade de acts até o próximo tiro.
+     */
+    protected void atirar(Jogador alvo, int cooldown)
+    {
+        if (!recargaPronta())
+        {
+            return;
+        }
+
+        Tiro tiro = new Tiro(0);
+        getWorld().addObject(tiro, getX(), getY());
+        tiro.turnTowards(alvo.getX(), alvo.getY());
+        Greenfoot.playSound("tiro.wav");
+
+        iniciarRecarga(cooldown);
+    }
+    
+    /**
      * Indica se o jogador está dentro do alcance de percepção.
      *
      * @return true se há um jogador por perto.

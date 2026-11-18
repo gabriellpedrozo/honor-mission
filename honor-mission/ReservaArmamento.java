@@ -29,5 +29,10 @@ public class ReservaArmamento extends MundoJogo
         
         // adiciona os paineis, herda de MundoJogo
         adicionarPaineis();
+        
+        // adiciona os patifes
+        addObject(new Patife(0), 300, 200);
+        addObject(new Patife(30), 700, 200);
+        addObject(new Patife(60), 500, 400);
     }
 }
