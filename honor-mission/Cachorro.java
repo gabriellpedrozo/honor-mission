@@ -25,10 +25,12 @@ public class Cachorro extends Vilao
     public void act()
     {
         atualizarRecarga();
+        
+        Jogador alvo = getJogadorPerto();
 
-        if (jogadorPerto())
+        if (alvo != null)
         {
-            perseguir(2);
+            perseguir(alvo, 2);
         }
         else
         {

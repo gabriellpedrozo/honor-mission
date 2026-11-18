@@ -37,10 +37,12 @@ public class Vigia extends Vilao
     public void act()
     {
         atualizarRecarga();
-
-        if (jogadorPerto())
+    
+        Jogador alvo = getJogadorPerto();
+        
+        if (alvo != null)
         {
-            atirar();
+            atirar(alvo);
         }
         else
         {
@@ -74,19 +76,19 @@ public class Vigia extends Vilao
 
     /**
      * Atira na direção do jogador, respeitando o tempo de recarga.
+     *
+     * @param alvo jogador que será alvo do tiro.
      */
-    private void atirar()
+    private void atirar(Jogador alvo)
     {
         if (!recargaPronta())
         {
             return;
         }
 
-        Jogador jogador = getObjectsInRange(ALCANCE_PERCEPCAO, Jogador.class).get(0);
-
         Tiro tiro = new Tiro(0);
         getWorld().addObject(tiro, getX(), getY());
-        tiro.turnTowards(jogador.getX(), jogador.getY());
+        tiro.turnTowards(alvo.getX(), alvo.getY());
         Greenfoot.playSound("tiro.wav");
 
         iniciarRecarga(TEMPO_RECARGA);

@@ -46,7 +46,24 @@ public class Vilao extends Actor
     {
         recarga = duracao;
     }
-
+    
+    /**
+     * Procura o jogador dentro do alcance de percepção.
+     *
+     * @return o jogador, ou null se não houver nenhum por perto.
+     */
+    protected Jogador getJogadorPerto()
+    {
+        List<Jogador> jogadores = getObjectsInRange(ALCANCE_PERCEPCAO, Jogador.class);
+    
+        if (jogadores.isEmpty())
+        {
+            return null;
+        }
+    
+        return jogadores.get(0);
+    }
+    
     /**
      * Indica se o jogador está dentro do alcance de percepção.
      *
@@ -54,7 +71,7 @@ public class Vilao extends Actor
      */
     protected boolean jogadorPerto()
     {
-        return !getObjectsInRange(ALCANCE_PERCEPCAO, Jogador.class).isEmpty();
+        return getJogadorPerto() != null;
     }
 
     /**
@@ -62,15 +79,10 @@ public class Vilao extends Actor
      *
      * @param velocidade pixels percorridos por act.
      */
-    protected void perseguir(int velocidade)
+    protected void perseguir(Jogador alvo, int velocidade)
     {
-        List<Jogador> jogadores = getWorld().getObjects(Jogador.class);
-        if (!jogadores.isEmpty())
-        {
-            Jogador jogador = jogadores.get(0);
-            turnTowards(jogador.getX(), jogador.getY());
-            move(velocidade);
-        }
+        turnTowards(alvo.getX(), alvo.getY());
+        move(velocidade);
     }
 
     /**
