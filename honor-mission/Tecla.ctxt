@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Tecla
+comment0.text=\n\ Representa\ uma\ tecla\ do\ teclado\ e\ detecta\ o\ momento\ exato\ em\ que\n\ ela\ \u00E9\ apertada,\ ignorando\ os\ acts\ em\ que\ ela\ apenas\ continua\ pressionada.\n\n\ @author\ Mateus\ Cunha\n\ @version\ 18/11/2026\n
+comment1.params=nome
+comment1.target=Tecla(java.lang.String)
+comment1.text=\n\ Cria\ o\ monitor\ de\ uma\ tecla.\n\n\ @param\ nome\ nome\ da\ tecla,\ como\ aceito\ por\ Greenfoot.isKeyDown.\n
+comment2.params=
+comment2.target=boolean\ foiApertada()
+comment2.text=\n\ Deve\ ser\ chamado\ uma\ vez\ por\ act.\n\n\ @return\ true\ somente\ no\ act\ em\ que\ a\ tecla\ passou\ de\ solta\ para\ pressionada.\n
+numComments=3
