@@ -51,9 +51,8 @@ public class Partida
      */
     private static void encerrarPorDerrota()
     {
-        musicaFundo.parar();
         Greenfoot.playSound("game_over.wav");
-        Greenfoot.setWorld(new TelaInicial());
+        voltarAoMenu();
     }
     
     /**
@@ -65,5 +64,15 @@ public class Partida
         musicaFundo.parar();
         musicaVitoria.tocar();
         Greenfoot.setWorld(new TelaVitoria());
+    }
+    
+    /**
+     * Volta para a tela inicial, parando qualquer música que esteja tocando.
+     */
+    public static void voltarAoMenu()
+    {
+        musicaVitoria.parar();
+        musicaFundo.parar();
+        Greenfoot.setWorld(new TelaInicial());
     }
 }

@@ -1,7 +1,8 @@
 #BlueJ class context
 comment0.target=TelaVitoria
-comment0.text=\n\ Write\ a\ description\ of\ class\ TelaVitoria\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Tela\ exibida\ quando\ o\ jogador\ vence\ a\ miss\u00E3o.\n\n\ @author\ Mateus\ Cunha\n\ @version\ 18/11/2026\n
 comment1.params=
 comment1.target=TelaVitoria()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ TelaVitoria.\n\ \n
-numComments=2
+comment2.params=
+comment2.target=void\ prepare()
+numComments=3

@@ -1,21 +1,21 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
 /**
- * Write a description of class TelaVitoria here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Tela exibida quando o jogador vence a missão.
+ *
+ * @author Mateus Cunha
+ * @version 18/11/2026
  */
 public class TelaVitoria extends World
 {
-
-    /**
-     * Constructor for objects of class TelaVitoria.
-     * 
-     */
     public TelaVitoria()
-    {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+    {
+        super(1000, 750, 1);
+        prepare();
+    }
+
+    private void prepare()
+    {
+        addObject(new BotaoVoltar(), 650, 650);
     }
 }

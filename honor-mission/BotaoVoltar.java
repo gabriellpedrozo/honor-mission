@@ -22,6 +22,6 @@ public class BotaoVoltar extends Botao
     @Override
     public void aoClicar()
     {
-        Greenfoot.setWorld(new TelaInicial());
+        Partida.voltarAoMenu();
     }
 }
