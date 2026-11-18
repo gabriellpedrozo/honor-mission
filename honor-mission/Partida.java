@@ -10,6 +10,9 @@ import greenfoot.*;
  */
 public class Partida
 {
+    private static Musica musicaFundo = new Musica("avante_camaradas.wav");
+    private static Musica musicaVitoria = new Musica("batista_de_melo.mp3");
+    
     /**
      * Classe utilitária: não deve ser instanciada.
      */
@@ -20,10 +23,11 @@ public class Partida
      */
     public static void iniciar()
     {
+        musicaVitoria.parar();
         Vidas.reiniciar();
         Pontuacao.reiniciar();
         Museu.reiniciarLasers();
-        MusicaFundo.tocar();
+        musicaFundo.tocar();
         Greenfoot.setWorld(new Patio());
     }
     
@@ -47,8 +51,19 @@ public class Partida
      */
     private static void encerrarPorDerrota()
     {
-        MusicaFundo.parar();
+        musicaFundo.parar();
         Greenfoot.playSound("game_over.wav");
         Greenfoot.setWorld(new TelaInicial());
+    }
+    
+    /**
+     * Encerra a partida com vitória: para a música de fundo, toca a música
+     * de vitória e vai para a tela de vitória.
+     */
+    public static void vencer()
+    {
+        musicaFundo.parar();
+        musicaVitoria.tocar();
+        Greenfoot.setWorld(new TelaVitoria());
     }
 }

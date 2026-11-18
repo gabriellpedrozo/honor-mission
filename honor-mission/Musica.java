@@ -8,28 +8,35 @@ import greenfoot.*;
  * @author (Mateus Cunha) 
  * @version (11/09/2026)
  */
-public class MusicaFundo  
+public class Musica 
 {
-    private static final int VOLUME = 40;
-    private static GreenfootSound musica = new GreenfootSound("avante_camaradas.wav");
+    private static final int VOLUME = 50;
+    private GreenfootSound som;
+    
+    /**
+     * Recebe o nome do arquivo e cria uma musica para ser tocada
+     */
+    public Musica (String arquivo) {
+        som = new GreenfootSound(arquivo);
+    }
 
     /**
      * Toca a musica em loop. Se ja estiver tocando, nao faz nada,
      * entao chamar de novo nao reinicia a musica.
      */
-    public static void tocar()
+    public void tocar()
     {
-        if (!musica.isPlaying()) {
-            musica.setVolume(VOLUME);
-            musica.playLoop();
+        if (!som.isPlaying()) {
+            som.setVolume(VOLUME);
+            som.playLoop();
         }
     }
 
     /**
      * Para a musica.
      */
-    public static void parar()
+    public void parar()
     {
-        musica.stop();
+        som.stop();
     }
 }

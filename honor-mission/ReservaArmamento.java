@@ -19,6 +19,20 @@ public class ReservaArmamento extends MundoJogo
     }
     
     /**
+     * A cada act, verifica se todos os patifes foram derrotados.
+     */
+    @Override
+    public void act()
+    {
+        super.act(); // roda o act do MundoJogo (vidas / game over)
+    
+        if (!Vidas.acabaram() && getObjects(Patife.class).isEmpty())
+        {
+            Partida.vencer();
+        }
+    }
+    
+    /**
      * Prepara o mundo para o início do programa.
      * Ou seja: criar os objetos iniciais e adicioná-los ao mundo.
      */
