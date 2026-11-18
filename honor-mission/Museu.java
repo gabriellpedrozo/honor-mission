@@ -82,13 +82,8 @@ public class Museu extends MundoJogo
         Jogador jogador = new Jogador();
         addObject(jogador, 883, 523);
         
-        //Responsavel pelas vidas e sua exibição
-        PainelVidas painelVidas = new PainelVidas(getWidth() - 80, getHeight() - 25);
-        painelVidas.adicionarAoMundo(this);
-
-        //responsavel pelos pontos e sua exibição
-        PainelPontuacao painelPontuacao = new PainelPontuacao(100, getHeight() -25);
-        painelPontuacao.adicionarAoMundo(this);
+        // adiciona os paineis, herda de MundoJogo
+        adicionarPaineis();
         
         // configuracoes da passagem de volta para o quartel
         Passagem saida = new Passagem (25, 78, mundoAnterior, 139, 367);

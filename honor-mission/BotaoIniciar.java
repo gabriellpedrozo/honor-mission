@@ -21,7 +21,6 @@ public class BotaoIniciar extends Botao
     @Override
     public void aoClicar()
     {
-        Greenfoot.setWorld(new Patio());
-        MusicaFundo.tocar();
+        Partida.iniciar();
     }
 }

@@ -14,7 +14,19 @@ public class Partida
      * Classe utilitária: não deve ser instanciada.
      */
     private Partida() { }
-
+    
+    /**
+     * Inicia a partida com pontuacao, vida e lasers do zero.
+     */
+    public static void iniciar()
+    {
+        Greenfoot.setWorld(new Patio());
+        Vidas.reiniciar();
+        Pontuacao.reiniciar();
+        Museu.reiniciarLasers();
+        MusicaFundo.tocar();
+    }
+    
     /**
      * Deve ser chamado uma vez por act pelo mundo ativo.
      * Faz passar o tempo de invulnerabilidade e encerra a partida

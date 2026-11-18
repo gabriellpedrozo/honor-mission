@@ -32,14 +32,9 @@ public class Quartel extends MundoJogo
         Jogador jogador = new Jogador();
         addObject(jogador, 250, 580);
 
-        //Responsavel pelas vidas e sua exibição
-        PainelVidas painelVidas = new PainelVidas(getWidth() - 80, getHeight() - 25);
-        painelVidas.adicionarAoMundo(this);
-
-        //responsavel pelos pontos e sua exibição
-        PainelPontuacao painelPontuacao = new PainelPontuacao(100, getHeight() -25);
-        painelPontuacao.adicionarAoMundo(this);
-
+        // adiciona os paineis, herda de MundoJogo
+        adicionarPaineis();
+        
         // Adicionando os viloes
         addObject(new Cachorro(), 223, 400);
         addObject(new Cachorro(), 336, 274);

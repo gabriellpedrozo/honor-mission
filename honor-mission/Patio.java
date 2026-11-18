@@ -37,22 +37,8 @@ public class Patio extends MundoJogo
         Rato rato4 = new Rato();
         addObject(rato4,375,313);
         
-        //Responsavel pelas vidas e sua exibição
-        Vidas.reiniciar();//reinicia as vidas ao recomeçar
-        //getHeight posiciona o painel próximo à parte inferior do mundo(independente dos pxs).
-        PainelVidas painelVidas = new PainelVidas(getWidth() - 80, getHeight() - 25);
-        painelVidas.adicionarAoMundo(this);
-
-        //responsavel pelos pontos e sua exibição
-        Pontuacao.reiniciar();
-        PainelPontuacao painelPontuacao = new PainelPontuacao(100, getHeight() -25);
-        painelPontuacao.adicionarAoMundo(this);
-        
         // adiciona os paineis, herda de MundoJogo
         adicionarPaineis();
-        
-        //reinicia lasers museu
-        Museu.reiniciarLasers();
 
         // configuracoes da passagem
         CasaVigia casaVigia = new CasaVigia(this);
