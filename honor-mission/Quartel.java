@@ -5,14 +5,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Mateus Cunha
  * @version 14/11/2026
  */
-public class Quartel extends World
+public class Quartel extends MundoJogo
 {
     /**
      * Construtor para o quartel.
      */
     public Quartel()
     {    
-        super(1000, 750, 1);
+        super(1000, 750);
         prepare();
     }
     

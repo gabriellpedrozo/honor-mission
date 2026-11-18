@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Mateus Cunha && Gabriel Pedrozo
  * @version 08/11/2026
  */
-public class Patio extends World
+public class Patio extends MundoJogo
 {
     /**
      * Construtor padrao para o patio.
@@ -14,7 +14,7 @@ public class Patio extends World
      */
     public Patio()
     {    
-        super(1000, 750, 1); 
+        super(1000, 750); 
         prepare();
     }
 
@@ -47,6 +47,9 @@ public class Patio extends World
         Pontuacao.reiniciar();
         PainelPontuacao painelPontuacao = new PainelPontuacao(100, getHeight() -25);
         painelPontuacao.adicionarAoMundo(this);
+        
+        // adiciona os paineis, herda de MundoJogo
+        adicionarPaineis();
         
         //reinicia lasers museu
         Museu.reiniciarLasers();

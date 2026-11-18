@@ -5,7 +5,7 @@ import greenfoot.*;
  * @author Gabriel Pedrozo && Mateus Cunha
  * @version 24/10/2026
  */
-public class CasaVigia extends World
+public class CasaVigia extends MundoJogo
 {
     private World mundoAnterior;
 
@@ -14,7 +14,7 @@ public class CasaVigia extends World
      */
     public CasaVigia(World patio)
     {
-        super(1200, 470, 1);
+        super(1200, 470);
         this.mundoAnterior = patio;
         prepare();
     }

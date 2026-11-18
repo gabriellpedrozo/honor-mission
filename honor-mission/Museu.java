@@ -9,7 +9,7 @@ import java.util.List;
  * @author Mateus Cunha && Gabriel Pedrozo
  * @version 15/11/2026
  */
-public class Museu extends World
+public class Museu extends MundoJogo
 {
     private static boolean lasersAtivos = true;
     private boolean estadoAtualizado = false;
@@ -20,7 +20,7 @@ public class Museu extends World
      */
     public Museu(World quartel)
     {
-        super(1000, 750, 1);
+        super(1000, 750);
         this.mundoAnterior = quartel;
 
         if (lasersAtivos)
@@ -55,8 +55,11 @@ public class Museu extends World
      * Verifica se o estado dos lasers mudou.
      * Atualiza o cenário e remove os lasers quando necessário.
      */
+    @Override
     public void act()
     {
+        super.act(); // precisar rodar o act do MundoJogo
+        
         if (!lasersAtivos && !estadoAtualizado)
         {
             setBackground("museu.png");

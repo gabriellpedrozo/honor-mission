@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Partida
+comment0.text=\n\ Controla\ o\ andamento\ da\ partida\:\ passagem\ do\ tempo\ de\ invulnerabilidade\n\ e\ verifica\u00E7\u00E3o\ de\ fim\ de\ jogo.\ Os\ membros\ s\u00E3o\ est\u00E1ticos\ para\ que\ possam\n\ ser\ chamados\ por\ qualquer\ mundo.\n\n\ @author\ Mateus\ Cunha\n\ @version\ 18/11/2026\n
+comment1.params=
+comment1.target=Partida()
+comment1.text=\n\ Classe\ utilit\u00E1ria\:\ n\u00E3o\ deve\ ser\ instanciada.\n
+comment2.params=
+comment2.target=void\ atualizar()
+comment2.text=\n\ Deve\ ser\ chamado\ uma\ vez\ por\ act\ pelo\ mundo\ ativo.\n\ Faz\ passar\ o\ tempo\ de\ invulnerabilidade\ e\ encerra\ a\ partida\n\ se\ o\ jogador\ ficou\ sem\ vidas.\n
+comment3.params=
+comment3.target=void\ encerrarPorDerrota()
+comment3.text=\n\ Para\ a\ m\u00FAsica,\ toca\ o\ som\ de\ game\ over\ e\ volta\ para\ a\ tela\ inicial.\n
+numComments=4

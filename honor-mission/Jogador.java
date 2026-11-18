@@ -43,14 +43,6 @@ public class Jogador extends Actor
      */
     public void act()
     {
-        if (Vidas.acabaram()) {
-            MusicaFundo.parar();
-            Greenfoot.playSound("game_over.wav");
-            Greenfoot.setWorld(new TelaInicial());
-            return;
-        }
-        Vidas.passarTempo();
-    
         movimentar();
         coletarItem();
         atacar();
