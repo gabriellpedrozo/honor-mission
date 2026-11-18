@@ -92,6 +92,9 @@ public class Museu extends MundoJogo
         // adicionando os itens do museu
         Cartao cartao = new Cartao();
         addObject(cartao, 74, 363);
+        
+        Arma arma = new Arma();
+        addObject(arma, 500, 150);
 
         if (lasersAtivos)
         {

@@ -157,4 +157,11 @@ public class Vilao extends Actor
      * subclasses vulneráveis sobrescrevem este método.
      */
     public void sofrerVassourada() { }
+    
+    /**
+     * Reação do vilão a um tiro do jogador. O tiro eh sempre fatal.
+     */
+    public void sofrerTiro() {
+        getWorld().removeObject(this);
+    }
 }

@@ -16,6 +16,9 @@ public class Jogador extends Actor
     private Tecla teclaAtacar;
     private Tecla teclaColetar;
     private Tecla teclaCartao;
+    private Tecla teclaTiro;
+    
+    private int direcao; // ajuda a implementar o tiro. 0 direita, 90 baixo, 180 esquerda, 270 cima.
 
     private Inventario inventario;
     private Colecao colecao;
@@ -29,11 +32,13 @@ public class Jogador extends Actor
         teclaAtacar = new Tecla("space");
         teclaColetar = new Tecla("e");
         teclaCartao = new Tecla("c");
+        teclaTiro = new Tecla("f");
 
         inventario = new Inventario();
         colecao = new Colecao();
 
         sufixoImagem = "";
+        direcao = 90; // comeca olhando para baixo (imagem frente)
         setImage("jogador_frente.png");
     }
 
@@ -45,6 +50,7 @@ public class Jogador extends Actor
         movimentar();
         coletarItem();
         atacar();
+        atirar();
         usarCartao();
     }
 
@@ -55,24 +61,28 @@ public class Jogador extends Actor
         if (Greenfoot.isKeyDown("left"))
         {
             definirImagem("esquerda");
+            direcao = 180;
             setLocation(getX() - VELOCIDADE, getY());
         }
 
         if (Greenfoot.isKeyDown("right"))
         {
             definirImagem("direita");
+            direcao = 0;
             setLocation(getX() + VELOCIDADE, getY());
         }
 
         if (Greenfoot.isKeyDown("up"))
         {
             definirImagem("costas");
+            direcao = 270;
             setLocation(getX(), getY() - VELOCIDADE);
         }
 
         if (Greenfoot.isKeyDown("down"))
         {
             definirImagem("frente");
+            direcao = 90;
             setLocation(getX(), getY() + VELOCIDADE);
         }
     }
@@ -117,6 +127,25 @@ public class Jogador extends Actor
         if (teclaAtacar.foiApertada()) {
             inventario.usar(Vassoura.NOME, this);
         }
+    }
+    
+    /**
+     * Se o jogador apertar X, tenta usar a arma do inventário.
+     */
+    private void atirar()
+    {
+        if (teclaTiro.foiApertada())
+        {
+            inventario.usar(Arma.NOME, this);
+        }
+    }
+
+    /**
+     * @return direção em que o jogador está olhando, em graus.
+     */
+    public int getDirecao()
+    {
+        return direcao;
     }
 
     /**
