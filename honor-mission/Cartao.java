@@ -31,7 +31,7 @@ public class Cartao extends ItemUtilizavel
             PassagemFase3 passagem = ((Quartel) mundo).getPassagemFase3();
             if (passagem.estaTrancada()) {
                 passagem.destrancar();
-                Greenfoot.playSound("abrindo_porta.wav");
+                Greenfoot.playSound("abre_portao.wav");
             
                 return true;
             }

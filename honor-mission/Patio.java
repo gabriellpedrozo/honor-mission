@@ -15,6 +15,7 @@ public class Patio extends MundoJogo
     public Patio()
     {    
         super(1000, 750); 
+        Partida.iniciarTempo();
         prepare();
     }
 

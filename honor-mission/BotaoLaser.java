@@ -33,7 +33,7 @@ public class BotaoLaser extends Actor
 
         if (eAgora && !perto.isEmpty() && !utilizado)
         {
-            Greenfoot.playSound("pegar_item.wav");
+            Greenfoot.playSound("desativa-laser.wav");
             Museu.desativarLasers();
             utilizado = true;
         }
