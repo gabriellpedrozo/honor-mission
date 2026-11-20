@@ -34,7 +34,7 @@ public class Quartel extends MundoJogo
 
         // adiciona os paineis, herda de MundoJogo
         adicionarPaineis();
-        
+
         // Adicionando os viloes
         addObject(new Cachorro(), 223, 400);
         addObject(new Cachorro(), 336, 274);
@@ -50,9 +50,6 @@ public class Quartel extends MundoJogo
 
         PassagemFase3 passagemReservaArmamento = new PassagemFase3(100, 58, reserva, 100, 300);
         addObject(passagemReservaArmamento, 400, 81);
-        
-        BotaoLaser botaoLaser = new BotaoLaser();
-        addObject(botaoLaser,596,161);
 
         Obstaculo paredeEsquerda = new Obstaculo(69, 750);
         addObject(paredeEsquerda,34,374);
@@ -111,8 +108,11 @@ public class Quartel extends MundoJogo
         addObject(mesaSalinha,596,156);
         Obstaculo criado1 = new Obstaculo(24, 22);
         addObject(criado1,898,288);
-        
+
         Obstaculo criado2 = new Obstaculo(24, 22);
         addObject(criado2,898,198);
+
+        BotaoLaser botaoLaser = new BotaoLaser();
+        addObject(botaoLaser,594,165);
     }
 }

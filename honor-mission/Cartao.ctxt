@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Cartao
-comment0.text=\r\n\ Cartao\ eh\ um\ item\ consumivel\ que\ desbloqueia\ a\ passagem\ para\ a\ terceira\ fase.\r\n\ \r\n\ @author\ Mateus\ Cunha\r\n\ @version\ 17/11/2026\r\n
+comment0.text=\r\n\ Cartao\ eh\ um\ item\ consumivel\ que\ desbloqueia\ a\ passagem\ para\ a\ terceira\ fase.\r\n\ \r\n\ @author\ Mateus\ Cunha\ &&\ Gabriel\ Pedrozo\r\n\ @version\ 17/11/2026\r\n
 comment1.params=
 comment1.target=Cartao()
 comment1.text=\r\n\ Cria\ o\ cartao.\r\n

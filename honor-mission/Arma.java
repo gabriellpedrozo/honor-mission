@@ -17,7 +17,7 @@ public class Arma extends ItemUtilizavel
     public Arma()
     {
         super(NOME, "Permite atirar nos patifes.");
-        setImage("vassoura.png");
+        setImage("pistola.png");
     }
     
     /**

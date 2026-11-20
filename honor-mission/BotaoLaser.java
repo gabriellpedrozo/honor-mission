@@ -16,10 +16,13 @@ public class BotaoLaser extends Actor
     /**
      * Inicializa o botão e define o estado inicial da tecla E.
      */
+
     public BotaoLaser()
     {
+        setImage("botao_laser.png");
         ePressionado = false;
     }
+
 
     /**
      * Verifica se o jogador está próximo e se a tecla E foi pressionada.
