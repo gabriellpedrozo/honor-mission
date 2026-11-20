@@ -1,6 +1,4 @@
-
 import greenfoot.*;
-
 /**
  * Tela que apresenta os controles e objetivos da missao.
  *
@@ -41,7 +39,7 @@ public class TelaInstrucoes extends World
             18, branco, 500, 550);
 
         // Adiciona o botao de voltar.
-        addObject(new BotaoVoltar(), 500, 680);
+        addObject(new BotaoVoltar("sair.png"), 500, 680);
     }
 
     /**

@@ -11,9 +11,9 @@ public class BotaoVoltar extends Botao
     /**
      * Cria o botão de voltar com a imagem de saída.
      */
-    public BotaoVoltar()
+    public BotaoVoltar(String imagem)
     {
-        super("sair.png");
+        super(imagem);
     }
 
     /**

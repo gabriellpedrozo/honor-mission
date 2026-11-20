@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Cartao eh um item consumivel que desbloqueia a passagem para a terceira fase.
  * 
- * @author Mateus Cunha
+ * @author Mateus Cunha && Gabriel Pedrozo
  * @version 17/11/2026
  */
 public class Cartao extends ItemUtilizavel
@@ -16,7 +16,7 @@ public class Cartao extends ItemUtilizavel
     public Cartao()
     {
         super(NOME, "Desbloqueia uma passagem no quartel.", true);
-        setImage("chave.png");
+        setImage("cartao.png");
     }
     
     /**
@@ -31,7 +31,7 @@ public class Cartao extends ItemUtilizavel
             PassagemFase3 passagem = ((Quartel) mundo).getPassagemFase3();
             if (passagem.estaTrancada()) {
                 passagem.destrancar();
-                Greenfoot.playSound("abrindo_porta.wav");
+                Greenfoot.playSound("abre_portao.wav");
             
                 return true;
             }

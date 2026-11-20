@@ -1,21 +1,30 @@
 import greenfoot.*;
-
 /**
  * Tela exibida quando o jogador vence a missão.
  *
- * @author Mateus Cunha
- * @version 18/11/2026
+ * @author Gabriel Pedrozo
+ * @version 19/11/2026
  */
-public class TelaVitoria extends World
+public class TelaVitoria extends TelaResultado
 {
+    /**
+     * Cria a tela de vitória e adiciona seus botões.
+     */
     public TelaVitoria()
     {
-        super(1000, 750, 1);
+        super("tela_vitoria.png", 340, 400, 600, 400);
         prepare();
     }
 
+    /**
+     * Adiciona os botões de reiniciar e voltar ao menu.
+     */
     private void prepare()
     {
-        addObject(new BotaoVoltar(), 650, 650);
+        BotaoReiniciar botaoReiniciar = new BotaoReiniciar("reiniciar_vitoria.png");
+        addObject(botaoReiniciar, 274, 629);
+
+        BotaoVoltar botaoVoltar = new BotaoVoltar("sair_vitoria.png");
+        addObject(botaoVoltar, 721, 628);
     }
 }

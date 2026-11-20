@@ -16,10 +16,13 @@ public class BotaoLaser extends Actor
     /**
      * Inicializa o botão e define o estado inicial da tecla E.
      */
+
     public BotaoLaser()
     {
+        setImage("botao_laser.png");
         ePressionado = false;
     }
+
 
     /**
      * Verifica se o jogador está próximo e se a tecla E foi pressionada.
@@ -33,7 +36,7 @@ public class BotaoLaser extends Actor
 
         if (eAgora && !perto.isEmpty() && !utilizado)
         {
-            Greenfoot.playSound("pegar_item.wav");
+            Greenfoot.playSound("desativa-laser.wav");
             Museu.desativarLasers();
             utilizado = true;
         }
