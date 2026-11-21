@@ -10,9 +10,9 @@ import greenfoot.*;
  */
 public class Partida
 {
-    private static Musica musicaFundo = new Musica("avante_camaradas.wav");
-    private static Musica musicaVitoria = new Musica("batista_de_melo.mp3");
-    private static Musica musicaDerrota = new Musica("toque_funebre.wav");
+    private static Musica musicaFundo = new Musica("avante_camaradas.wav", 50);
+    private static Musica musicaVitoria = new Musica("fibra_de_heroi.wav", 80);
+    private static Musica musicaDerrota = new Musica("toque_funebre.wav", 80);
     private static long inicio; //long para evitar overflow
 
     /**

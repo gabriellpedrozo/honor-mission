@@ -10,14 +10,15 @@ import greenfoot.*;
  */
 public class Musica 
 {
-    private static final int VOLUME = 50;
+    private int volume;
     private GreenfootSound som;
     
     /**
      * Recebe o nome do arquivo e cria uma musica para ser tocada
      */
-    public Musica (String arquivo) {
+    public Musica (String arquivo, int volume) {
         som = new GreenfootSound(arquivo);
+        this.volume = volume;
     }
 
     /**
@@ -27,7 +28,7 @@ public class Musica
     public void tocar()
     {
         if (!som.isPlaying()) {
-            som.setVolume(VOLUME);
+            som.setVolume(volume);
             som.playLoop();
         }
     }
