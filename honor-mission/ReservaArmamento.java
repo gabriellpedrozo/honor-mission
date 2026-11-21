@@ -61,5 +61,35 @@ public class ReservaArmamento extends MundoJogo
 
         Obstaculo cima = new Obstaculo(925, 40);
         addObject(cima,502,22);
+
+        Obstaculo mesaArma = new Obstaculo(155, 80);
+        addObject(mesaArma,883,595);
+
+        Obstaculo cabides = new Obstaculo(730, 180);
+        addObject(cabides,610,87);
+
+        Obstaculo armarioMunicao = new Obstaculo(210, 180);
+        addObject(armarioMunicao,141,89);
+
+        Obstaculo caixasDireita = new Obstaculo(170, 220);
+        addObject(caixasDireita,883,265);
+
+        Obstaculo caixasDireitaBaixo = new Obstaculo(110, 185);
+        addObject(caixasDireitaBaixo,909,460);
+
+        Obstaculo armasEsquerda = new Obstaculo(75, 475);
+        addObject(armasEsquerda,66,400);
+
+        Obstaculo mesaEsquerda = new Obstaculo(210, 104);
+        addObject(mesaEsquerda,161,616);
+
+        Obstaculo objetosEsquerdaFrente = new Obstaculo(41, 215);
+        addObject(objetosEsquerdaFrente,111,324);
+
+        Obstaculo caixaPequena = new Obstaculo(50, 70);
+        addObject(caixaPequena,784,606);
+        
+        Obstaculo duasCaixasPequenas = new Obstaculo(90, 30);
+        addObject(duasCaixasPequenas,305,624);
     }
 }
