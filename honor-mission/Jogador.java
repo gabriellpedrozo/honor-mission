@@ -58,28 +58,28 @@ public class Jogador extends Actor
      * Faz o jogador se movimentar pelo mapa
      */
     private void movimentar() {
-        if (Greenfoot.isKeyDown("left"))
+        if (Greenfoot.isKeyDown("left") || Greenfoot.isKeyDown("a"))
         {
             definirImagem("esquerda");
             direcao = 180;
             setLocation(getX() - VELOCIDADE, getY());
         }
 
-        if (Greenfoot.isKeyDown("right"))
+        if (Greenfoot.isKeyDown("right") || Greenfoot.isKeyDown("d"))
         {
             definirImagem("direita");
             direcao = 0;
             setLocation(getX() + VELOCIDADE, getY());
         }
 
-        if (Greenfoot.isKeyDown("up"))
+        if (Greenfoot.isKeyDown("up") || Greenfoot.isKeyDown("w"))
         {
             definirImagem("costas");
             direcao = 270;
             setLocation(getX(), getY() - VELOCIDADE);
         }
 
-        if (Greenfoot.isKeyDown("down"))
+        if (Greenfoot.isKeyDown("down") || Greenfoot.isKeyDown("s"))
         {
             definirImagem("frente");
             direcao = 90;

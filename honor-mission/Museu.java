@@ -92,6 +92,11 @@ public class Museu extends MundoJogo
         // adicionando os itens do museu
         Cartao cartao = new Cartao();
         addObject(cartao, 74, 363);
+        
+        Arma arma = new Arma();
+        addObject(arma,111,175);
+        
+        addObject(new Moeda(), 717, 522);
 
         if (lasersAtivos)
         {
@@ -172,11 +177,6 @@ public class Museu extends MundoJogo
 
         Obstaculo farda = new Obstaculo(155, 28);
         addObject(farda,663,162);
-
-        
-        Arma arma = new Arma();
-        addObject(arma,105,176);
-        arma.setLocation(111,175);
     }
 }
 

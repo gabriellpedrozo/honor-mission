@@ -68,7 +68,7 @@ public class Partida
     private static void encerrarPorDerrota()
     {
         musicaFundo.parar();
-        Greenfoot.playSound("game_over.wav");
+        //Greenfoot.playSound("game_over.wav");
         musicaDerrota.tocar();
         Greenfoot.setWorld(new TelaDerrota());
     }

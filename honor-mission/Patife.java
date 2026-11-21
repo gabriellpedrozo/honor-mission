@@ -42,4 +42,23 @@ public class Patife extends Vilao
             atirar(alvo, TEMPO_RECARGA);
         }
     }
+    
+    /**
+     * O patife morre com 3 golpes.
+     */
+    @Override
+    public void sofrerVassourada()
+    {
+        Greenfoot.playSound("patife.wav");
+        getWorld().removeObject(this);
+    }
+    
+    /**
+     * Sobrescreve o metodo do vilao, pois o patife emite som quando baleado.
+     */
+    @Override
+    public void sofrerTiro() {
+        super.sofrerTiro();
+        Greenfoot.playSound("patife.wav");
+    }
 }

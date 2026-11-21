@@ -26,7 +26,7 @@ public class PassagemFase3 extends Passagem
     }
     
     /**
-     * So pode passar se houve desbloqueio com a chave.
+     * So pode passar se houve desbloqueio com o cartao.
      */
     @Override
     protected boolean podePassar() {

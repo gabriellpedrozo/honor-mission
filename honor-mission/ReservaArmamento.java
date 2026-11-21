@@ -40,13 +40,26 @@ public class ReservaArmamento extends MundoJogo
     {
         Jogador jogador = new Jogador();
         addObject(jogador, 501, 606);
-        
+
         // adiciona os paineis, herda de MundoJogo
         adicionarPaineis();
-        
+
         // adiciona os patifes
         addObject(new Patife(0), 300, 200);
         addObject(new Patife(30), 700, 200);
         addObject(new Patife(60), 500, 400);
+
+        // obstaculos
+        Obstaculo parteBaixo = new Obstaculo(1006, 120);
+        addObject(parteBaixo,500,696);
+
+        Obstaculo esquerda = new Obstaculo(40, 635);
+        addObject(esquerda,20,318);
+
+        Obstaculo direita = new Obstaculo(40, 635);
+        addObject(direita,986,318);
+
+        Obstaculo cima = new Obstaculo(925, 40);
+        addObject(cima,502,22);
     }
 }

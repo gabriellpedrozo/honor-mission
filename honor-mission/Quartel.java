@@ -48,9 +48,20 @@ public class Quartel extends MundoJogo
         Passagem passagemMuseu = new Passagem(35, 60, museu, 875, 467);
         addObject(passagemMuseu, 80, 367);
 
-        PassagemFase3 passagemReservaArmamento = new PassagemFase3(100, 58, reserva, 100, 300);
+        PassagemFase3 passagemReservaArmamento = new PassagemFase3(100, 58, reserva, 501, 606);
         addObject(passagemReservaArmamento, 400, 81);
-
+        
+        // Posicionando itens
+        BotaoLaser botaoLaser = new BotaoLaser();
+        addObject(botaoLaser,594,165);
+        
+        Radio radio = new Radio();
+        addObject(radio, 237, 91);
+        
+        addObject(new Moeda(), 743, 94);
+        addObject(new Moeda(), 114, 482);
+        
+        // Adicionando obstaculos
         Obstaculo paredeEsquerda = new Obstaculo(69, 750);
         addObject(paredeEsquerda,34,374);
         Obstaculo paredeBaixo = new Obstaculo(961, 89);
@@ -111,8 +122,5 @@ public class Quartel extends MundoJogo
 
         Obstaculo criado2 = new Obstaculo(24, 22);
         addObject(criado2,898,198);
-
-        BotaoLaser botaoLaser = new BotaoLaser();
-        addObject(botaoLaser,594,165);
     }
 }
