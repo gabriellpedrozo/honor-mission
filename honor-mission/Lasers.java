@@ -14,9 +14,6 @@ public class Lasers extends Actor
     public Lasers (int largura, int altura)
     {
         GreenfootImage imagem = new GreenfootImage(largura, altura);
-        imagem.setTransparency(100);
-        imagem.setColor(Color.GREEN);
-        imagem.fill();
         setImage(imagem);
     }
     

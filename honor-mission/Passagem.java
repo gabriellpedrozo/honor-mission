@@ -33,11 +33,6 @@ public class Passagem extends Actor
         this.destinoX = destinoX;
         this.destinoY = destinoY;
         setImage(new GreenfootImage(largura, altura));
-        
-        //GreenfootImage imagem = new GreenfootImage(largura, altura);
-        //imagem.setColor(Color.BLUE);
-        //imagem.fill();
-        //setImage(imagem);
     }
 
     /**
