@@ -7,12 +7,16 @@ import greenfoot.*;
  */
 public class TelaVitoria extends TelaResultado
 {
+    private Colecao colecao;
+    
     /**
      * Cria a tela de vitória e adiciona seus botões.
      */
-    public TelaVitoria()
+    public TelaVitoria(Colecao colecao)
     {
         super("tela_vitoria.png", 340, 400, 600, 400);
+        this.colecao = colecao;
+        System.out.println("Itens na vitoria: " + this.colecao.getQuantidade());
         prepare();
     }
 
@@ -26,5 +30,8 @@ public class TelaVitoria extends TelaResultado
 
         BotaoVoltar botaoVoltar = new BotaoVoltar("sair_vitoria.png");
         addObject(botaoVoltar, 721, 628);
+        BotaoColecao botaoColecao = new BotaoColecao(this.colecao);
+        addObject(botaoColecao,504,632);
+        botaoColecao.setLocation(497,627);
     }
 }
