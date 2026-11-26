@@ -30,7 +30,6 @@ public class ReservaArmamento extends MundoJogo
     
         if (!Vidas.acabaram() && getObjects(Patife.class).isEmpty())
         {
-            System.out.println(jogador.getColecao().getQuantidade());
             Partida.vencer(jogador.getColecao());
         }
     }

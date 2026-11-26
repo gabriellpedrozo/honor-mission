@@ -16,7 +16,6 @@ public class TelaVitoria extends TelaResultado
     {
         super("tela_vitoria.png", 340, 400, 600, 400);
         this.colecao = colecao;
-        System.out.println("Itens na vitoria: " + this.colecao.getQuantidade());
         prepare();
     }
 
