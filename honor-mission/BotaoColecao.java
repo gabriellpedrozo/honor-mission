@@ -16,7 +16,7 @@ public class BotaoColecao extends Botao
     
     public BotaoColecao(Colecao colecao)
     {
-        super("iniciar_missao.png"); // Imagem provisória
+        super("botao_colecao.png"); 
         this.colecao = colecao;
     }
 
