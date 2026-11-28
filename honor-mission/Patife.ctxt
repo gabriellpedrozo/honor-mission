@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Patife
+comment0.text=\r\n\ Assaltante\ do\ Tiro\ de\ Guerra,\ inimigo\ final.\r\n\ Fica\ parado\ e\ atira\ no\ jogador\ onde\ quer\ que\ ele\ esteja\ no\ mundo.\r\n\ \r\n\ @author\ Mateus\ Cunha\r\n\ @version\ 18/11/2026\r\n
+comment1.params=atrasoInicial
+comment1.target=Patife(int)
+comment1.text=\r\n\ Cria\ um\ patife\ com\ um\ atraso\ inicial\ antes\ do\ primeiro\ tiro.\r\n\ Dar\ atrasos\ diferentes\ evita\ que\ todos\ atirem\ no\ mesmo\ instante.\r\n\r\n\ @param\ atrasoInicial\ acts\ de\ espera\ antes\ do\ primeiro\ tiro.\r\n
+comment2.params=
+comment2.target=Patife()
+comment2.text=\r\n\ Construtor\ padr\u00E3o\:\ atira\ assim\ que\ o\ jogador\ aparece.\r\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\r\n\ Fica\ parado\ e\ atira\ no\ jogador,\ esteja\ ele\ onde\ estiver.\r\n
+comment4.params=
+comment4.target=void\ sofrerVassourada()
+comment4.text=\r\n\ O\ patife\ morre\ com\ 3\ golpes.\r\n
+comment5.params=
+comment5.target=void\ sofrerTiro()
+comment5.text=\r\n\ Sobrescreve\ o\ metodo\ do\ vilao,\ pois\ o\ patife\ emite\ som\ quando\ baleado.\r\n
+numComments=6

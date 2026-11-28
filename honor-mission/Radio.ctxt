@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Radio
+comment0.text=\r\n\ Item\ colecionavel\ que\ aumenta\ a\ pontuacao\ do\ jogador.\r\n\r\n\ @author\ Mateus\ Cunha\ &&\ Gabriel\ Pedrozo\r\n\ @version\ 26/11/2026\r\n
+comment1.params=
+comment1.target=Radio()
+comment2.params=
+comment2.target=greenfoot.GreenfootImage\ getImagemColecao()
+numComments=3
